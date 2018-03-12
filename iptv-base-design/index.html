@@ -33,10 +33,13 @@
 
 </head>
 
+<!-- MOVE THE ABOVE INTO A HEADER FILE -->
+
 <body>
     <header>
 
         <section id="message_section">
+            <!-- WHERE THE EVENT HOLDER CAN ADD A MESSAGE -->
             <div>this is a promo message</div>
         </section>
 
@@ -44,12 +47,20 @@
         <!-- MOVE THIS INTO IT'S OWN FILE-->
         <section id="section_header_version_1">
             <div class="mw1500">
+                <!-- LINKS TO THE HOMEPAGE-->
                 <div class="logo_wrap"><a href="#" onclick="return false"><img src="base/images/dummy-logo.svg" alt="Company Name" /></a></div>
                 <nav>
                     <ul>
-                        <li class="nav_basket"><a href="#" onclick="return false"><span class="icon"></span><span class="hide_mobile nav_text">Basket</span></a></li>
+                        <li class="nav_basket">
+                            <a href="basket/index.html" onclick="return false">
+                                <!-- NUMBER OF ITEMS IN THE BASKET -->
+                                <span class="icon"><span class="basket_number">2</span></span><span class="hide_mobile nav_text">Basket</span>
+                            </a>
+                        </li>
                         <li class="nav_login"><a href="#" onclick="return false"><span class="icon"></span><span class="hide_mobile nav_text">Login / Register</span></a></li>
+                        <!-- LINKS TO THE HOMEPAGE-->
                         <li class="nav_home"><a href="#" onclick="return false"><span class="icon"></span><span class="hide_mobile nav_text">Watch Live</span></a></li>
+                        <!-- LINKS TO THE EVENT HOLDERS MAIN WEBSITE-->
                         <li class="nav_main"><a href="#" onclick="return false"><span class="icon"></span><span class="hide_mobile nav_text">Main Website</span></a></li>
                     </ul>
                 </nav>

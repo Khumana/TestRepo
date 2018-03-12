@@ -50,7 +50,7 @@
         background-color: darkblue;
     }
 
-    .prod_list_details_wrap h3 {
+    h3 {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
