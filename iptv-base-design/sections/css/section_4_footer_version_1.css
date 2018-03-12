@@ -1,0 +1,121 @@
+#section_4_footer_version_1 {
+    background-color: #242424;
+    color: #fff;
+    float: left;
+    width: 100%;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+#section_4_footer_version_1 .footer_menu_wrap {
+    width: 100%;
+    float: left;
+    margin: 10px auto;
+}
+
+#section_4_footer_version_1 ul {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    float: none;
+    display: block;
+}
+
+#section_4_footer_version_1 ul li {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    float: left;
+    list-style: none;
+}
+
+#section_4_footer_version_1 ul li a {
+    color: #ccc;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    line-height: 1em;
+    padding: 10px;
+    border-left: 1px solid #888;
+}
+
+#section_4_footer_version_1 ul li:nth-child(1) a {
+    border: none;
+}
+
+#section_4_footer_version_1 .footer_logo_container {
+    width: 100%;
+    margin: 10px 0;
+    clear: both;
+    display: block;
+    font-weight: 300;
+    line-height: 1em;
+    float: left;
+}
+
+#section_4_footer_version_1 .footer_logo_wrap {
+    margin: 0 auto;
+    width: 200px;
+}
+
+#section_4_footer_version_1 .footer_copyright,
+#section_4_footer_version_1 .footer_logo {
+    float: left;
+    width: 50%;
+}
+
+#section_4_footer_version_1 .footer_copyright {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.poweredby {
+    color: #888;
+    float: left;
+    width: 100%;
+    font-size: 14.5px;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+
+.copyright_msg {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+}
+
+.footer_wrap {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #section_4_footer_version_1 .footer_menu_wrap {
+        width: 70%;
+        float: left;
+        margin: 10px auto;
+    }
+    #section_4_footer_version_1 ul {
+        float: left;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #section_4_footer_version_1 ul li {
+        width: auto;
+        margin: 0;
+    }
+    #section_4_footer_version_1 ul li a {
+        line-height: 62px;
+        padding: 0 20px;
+        margin: 0 20px;
+        width: 100%;
+    }
+    #section_4_footer_version_1 .footer_logo_container {
+        width: auto;
+        float: right;
+        clear: none;
+    }
+}

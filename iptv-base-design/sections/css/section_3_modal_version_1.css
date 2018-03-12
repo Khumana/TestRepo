@@ -1,0 +1,155 @@
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-dialog {
+    width: 96%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.close_modal {
+    padding: 8px 5px;
+    background-color: transparent;
+    color: #888;
+    width: 100%;
+    margin: 0;
+}
+
+.close_modal span {
+    display: inline-block;
+    float: left;
+    line-height: 30px;
+}
+
+.close_icon {
+    height: 30px;
+    width: 30px;
+    background-image: url('../../base/images/icons/icons_cross-light-grey.svg');
+    display: block;
+    padding: 0;
+}
+
+.modal_summary_wrap {
+    float: left;
+    text-align: left;
+    padding: 10px;
+}
+
+.modal_summary_wrap h4 {
+    line-height: 1.4em;
+    margin: 20px 0 0 0;
+    float: left;
+    width: 100%;
+}
+
+.modal_summary_wrap .time_onair_wrap {
+    line-height: 2.5em;
+    font-size: 1em;
+    background-color: #0098C6;
+    border: none;
+}
+
+.modal_summary_wrap .time_onair {
+    background-color: #0098C6;
+    border-color: #fff;
+}
+
+.modal_summary_wrap .list_price_wrap {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.modal_summary_wrap .sku_wrap {
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.modal_summary_wrap .stars_container {
+    float: left;
+    margin-top: 20px;
+}
+
+.modal_summary_wrap .modal_prod_intro {
+    float: left;
+    width: 100%;
+    clear: both;
+    margin-top: 20px;
+}
+
+.modal_select_wrap {
+    float: left;
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.modal_more_details_wrap {
+    margin-top: 1px;
+    float: left;
+    width: 100%;
+}
+
+.accordion_item {
+    text-align: left;
+}
+
+.accordion_item button {
+    text-align: left;
+    margin: 0;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    float: left;
+    width: 100%;
+    background: url(../../base/images/icons/icons_minus-white-thick.svg) no-repeat right .5rem center #0098C6;
+    background-size: 16px;
+}
+
+.accordion_item button.collapsed {
+    background: url(../../base/images/icons/icons_plus-white-thick.svg) no-repeat right .5rem center #333333;
+    background-size: 16px;
+}
+
+
+.accordion_item .accordion_item_content {
+    padding: 20px 10px 10px 10px;
+    float: left;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .modal_img_wrap {
+        padding: 0px 40px;
+    }
+    .modal_summary_wrap {
+        padding: 40px;
+    }
+    .accordion_item .accordion_item_content {
+        padding: 30px 40px 10px 40px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    button.close_modal {
+        width: 50%;
+        position: absolute;
+    }
+    .modal_summary_wrap {
+        width: 50%;
+        padding: 60px 20px 20px 20px;
+    }
+    .modal_img_wrap {
+        width: 50%;
+        float: right;
+        padding: 0;
+    }
+}
