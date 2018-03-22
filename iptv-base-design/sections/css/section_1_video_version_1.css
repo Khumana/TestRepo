@@ -33,6 +33,22 @@
         border: 1px solid #ccc;
     }
 
+    .no_item_on_air {
+        grid-area: product;
+        display: grid;
+        grid-template-areas: "no_item";
+        /*        grid-template-columns: 40% 60%;*/
+        float: left;
+        width: 100%;
+        border: 1px solid #ccc;
+    }
+
+    .no_item_on_air .noitem_txt_wrap {
+        padding: 40px 20px;
+        align-self: center;
+        grid-area: no_item;
+    }
+
     #section_1_video_version_1 .prod_list_img_wrap {
         grid-area: image;
         margin: 0;
