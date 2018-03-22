@@ -37,7 +37,6 @@
         grid-area: product;
         display: grid;
         grid-template-areas: "no_item";
-        /*        grid-template-columns: 40% 60%;*/
         float: left;
         width: 100%;
         border: 1px solid #ccc;
