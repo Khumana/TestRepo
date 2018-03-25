@@ -1,4 +1,4 @@
-/* SLICK CAROUSEL #region */
+// SLICK CAROUSEL #region
 
 $(document).ready(function () {
     $('.slick-slider').slick({
@@ -14,10 +14,10 @@ $('.modal').on('shown.bs.modal', function (e) {
 
 
 
-/* SLICK CAROUSEL #endregion */
+// SLICK CAROUSEL #endregion
 
 
-/* ANCHOR LINK SCROLL #region */
+// ANCHOR LINK SCROLL #region
 
 $(function () {
     $('a[href*=#]:not([href=#])').click(function () {
@@ -34,4 +34,32 @@ $(function () {
     });
 });
 
-/* ANCHOR LINK SCROLL #endregion */
+// ANCHOR LINK SCROLL #endregion
+
+
+// CHECKBOX SHOW HIDE ADDRESS #region
+
+function valueChanged() {
+    if ($('.checkbox_address').is(":checked"))
+        $(".BillingAddress").hide();
+    else
+        $(".BillingAddress").show();
+}
+
+// CHECKBOX SHOW HIDE ADDRESS #endregion
+
+// \/ DELETE THIS = DEMO ONLY \/
+// CHECKOUT CHANGE PARTIAL VIEW #region
+
+$("#LoginCheckoutBtn").click(function () {
+    $(".checkout_login").hide();
+    $(".CheckoutAddress").show();
+});
+
+$("#CheckoutAddressBtn").click(function () {
+    $(".CheckoutAddress").hide();
+    $(".CheckoutPay").show();
+});
+
+// /\ DELETE THIS = DEMO ONLY /\
+// CHECKBOX SHOW HIDE ADDRESS #endregion

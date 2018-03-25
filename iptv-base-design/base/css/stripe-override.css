@@ -1,0 +1,55 @@
+button.stripe-button-el {
+    overflow: hidden;
+    display: inline-block;
+    visibility: visible !important;
+    border: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 33px;
+    background-position: center;
+    text-decoration: none;
+    -webkit-border-radius: 0px!important;
+    -moz-border-radius: 0px!important;
+    -ms-border-radius: 0px!important;
+    -o-border-radius: 0px!important;
+    border-radius: 0px!important;
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    -ms-box-shadow: none!important;
+    -o-box-shadow: none!important;
+    box-shadow: none!important;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    background: #575757!important;
+}
+
+button.stripe-button-el span {
+    margin: 0;
+    padding: 0!important;
+    font-size: 1.3em!important;
+    line-height: 50px!important;
+    height: 50px!important;
+    display: inline-block!important;
+    float: none;
+    border: none;
+    background: transparent!important;
+}
+
+button.stripe-button-el span:before {
+    background-image: url(../images/icons/icons_lock-white.svg);
+    content: '';
+    background-repeat: no-repeat;
+    background-size: 33px;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    float: left;
+    border: none;
+}

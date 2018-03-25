@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="../base/css/bootstrap.min.css" media="all">
     <link rel="stylesheet" type="text/css" href="../base/css/reset.css" media="all">
     <link rel="stylesheet" type="text/css" href="../base/css/base-style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../base/css/stripe-override.css" media="all">
 
     <!-- SECTION LAYOUT STYLES - EACH SECTION NEEDS DYNAMIC VERSION NUMBERS -->
     <link rel="stylesheet" type="text/css" href="../sections/css/section_0_preheader_version_1.css" />
@@ -70,111 +71,141 @@
 
     <article>
 
-        <section id="basketPage" class="basket_page">
-            <div class="mw1500">
-                <div class="title_wrap">
-                    <h1>Basket Summary</h1>
+        <section id="checkoutPage" class="checkout_page">
+
+            <section class="checkout_breadcrumb">
+                <div class="checkout_breadcrumb_wrap mw500">
+                    <!-- ADD THE CLASS 'CURRENT' TO HIGHLIGHT THE [div co_bc_step] STEP-->
+                    <div class="co_bc_step current">
+                        <span class="co_bc_number">1</span>
+                        <span class="co_bc_lbl">Delivery</span>
+                    </div>
+                    <div class="co_bc_step">
+                        <span class="co_bc_number">2</span>
+                        <span class="co_bc_lbl">Pay</span>
+                    </div>
+                    <div class="co_bc_step">
+                        <span class="co_bc_number">3</span>
+                        <span class="co_bc_lbl">Receipt</span>
+                    </div>
+                    <div class="co_bc_line"></div>
                 </div>
-                <div class="basket_prod_list_wrap">
-                    <div class="basket_prod_item_wrap">
-                        <div class="basket_prod_img" data-toggle="modal" data-target="#productModal">
-                            <img src="../base/images/image-port-small.png" alt="product title" /></div>
-                        <div class="basket_prod_details">
-                            <h3 data-toggle="modal" data-target="#productModal">This is a product title product title product title</h3>
-                            <div class="sku_wrap border_right">098765</div>
-                            <div class="var_wrap">
-                                <span class="var_value var_value1 border_right">Colour</span>
-                                <span class="var_value var_value2 border_right">Size</span>
-                            </div>
-                        </div>
-                        <div class="quanity_wrap">
-                            <button class="qty_button minus disabled" disabled="disabled" type="button">-</button>
-                            <input class="bkt_quanity" type="number" id="itemQuanity" value="1" maxlength="3" pattern="[0-9]*" min="1" max="10">
-                            <button class="qty_button plus" type="button">+</button>
-                        </div>
-                        <div class="basket_prod_price_wrap list_price_wrap">
-                            <span class="was_price">&pound;800.88</span>
-                            <span class="list_price">&pound;800.88</span>
-                        </div>
-                        <div class="basket_remove"><a href="#" class="remove_bkt_item">X Remove</a></div>
-                    </div>
-                    <div class="basket_prod_item_wrap">
-                        <div class="basket_prod_img" data-toggle="modal" data-target="#productModal">
-                            <img src="../base/images/image-port-small.png" alt="product title" /></div>
-                        <div class="basket_prod_details">
-                            <h3 data-toggle="modal" data-target="#productModal">This is a product title product title product title</h3>
-                            <div class="sku_wrap border_right">098765</div>
-                            <div class="var_wrap">
-                                <span class="var_value var_value1 border_right">Colour</span>
-                                <span class="var_value var_value2 border_right">Size</span>
-                            </div>
-                        </div>
-                        <div class="quanity_wrap">
-                            <button class="qty_button minus disabled" disabled="disabled" type="button">-</button>
-                            <input class="bkt_quanity" type="number" id="itemQuanity" value="1" maxlength="3" pattern="[0-9]*" min="1" max="10">
-                            <button class="qty_button plus" type="button">+</button>
-                        </div>
-                        <div class="basket_prod_price_wrap list_price_wrap">
-                            <span class="was_price">&pound;800.88</span>
-                            <span class="list_price">&pound;800.88</span>
-                        </div>
-                        <div class="basket_remove"><a href="#" class="remove_bkt_item">X Remove</a></div>
-                    </div>
-                    <div class="basket_prod_item_wrap">
-                        <div class="basket_prod_img" data-toggle="modal" data-target="#productModal">
-                            <img src="../base/images/image-port-small.png" alt="product title" /></div>
-                        <div class="basket_prod_details">
-                            <h3 data-toggle="modal" data-target="#productModal">This is a product title product title product title</h3>
-                            <div class="sku_wrap border_right">098765</div>
-                            <div class="var_wrap">
-                                <span class="var_value var_value1 border_right">Colour</span>
-                                <span class="var_value var_value2 border_right">Size</span>
-                            </div>
-                        </div>
-                        <div class="quanity_wrap">
-                            <button class="qty_button minus disabled" disabled="disabled" type="button">-</button>
-                            <input class="bkt_quanity" type="number" id="itemQuanity" value="1" maxlength="3" pattern="[0-9]*" min="1" max="10">
-                            <button class="qty_button plus" type="button">+</button>
-                        </div>
-                        <div class="basket_prod_price_wrap list_price_wrap">
-                            <span class="was_price">&pound;800.88</span>
-                            <span class="list_price">&pound;800.88</span>
-                        </div>
-                        <div class="basket_remove"><a href="#" class="remove_bkt_item">X Remove</a></div>
-                    </div>
+            </section>
+
+            <section id="checkoutLogin" class="checkout_section">
+                <div class="mw500 checkout_login">
+                    <h3>Please login</h3>
+                    <form>
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="button" name="submit" class="checkoutbtn submit" id="LoginCheckoutBtn">
+                            <span class="btn_txt_wrap">
+                                <span class="icon"></span>
+                                <span class="btn_txt">Continue Securely</span>
+                            </span>
+                        </button>
+                    </form>
                 </div>
-                <div class="basket_delivery_wrap">
-                    <h2>Delivery Summary</h2>
-                    <div class="delivery_options_wrap">
-                        <form>
-                            <fieldset>
-                                <div class="del_opt">
-                                    <label class="radio">
-                                    <input type="radio" name="del_opt" value="standard" checked="checked">
-                                        <span>Standard Delivery (3-5 working days)</span>
-                                    </label>
-                                </div>
-                                <div class="del_opt_cost">&pound;3.99</div>
-                                <div class="del_opt"><label class="radio">
-                                    <input type="radio" name="del_opt" value="click">
-                                        <span>Click &amp; Collect (3-5 working days)</span>
-                                    </label>
-                                </div>
-                                <div class="del_opt_cost">&pound;5.99</div>
-                                <div class="del_opt"><label class="radio">
-                                    <input type="radio" name="del_opt" value="express">
-                                        <span>Express Delivery (1 working day, order by 1pm)</span>
-                                    </label>
-                                </div>
-                                <div class="del_opt_cost">&pound;8.99</div>
-                            </fieldset>
+            </section>
+
+            <section id="checkoutAddress" class="checkout_section CheckoutAddress" style="display: none;">
+                <div class="mw500 checkout_address">
+                    <div class="delivery_address address_input">
+                        <h3>Delivery</h3>
+                        <div class="address_wrap">
+                            <div class="co_bc_address">Please add an address</div>
+                            <div class="co_bc_address_add" data-toggle="modal" data-target="#addressModal">+</div>
+                        </div>
+                    </div>
+                    <div class="checkbox_wrap">
+                        <input type="checkbox" name="checkbox" class="css-checkbox checkbox checkbox_address" checked onchange="valueChanged()">
+                        <label class="css-label checkbox-label">Use as my billing address</label>
+                    </div>
+                    <div class="BillingAddress billing_address address_input" style="display: none;">
+                        <h3>Billing Address</h3>
+                        <div class="address_wrap">
+                            <div class="co_bc_address">Please add an address</div>
+                            <div class="co_bc_address_add" data-toggle="modal" data-target="#addressModal">+</div>
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <!--
+                        <button type="button" name="submit" class="checkoutbtn submit" id="CheckoutAddressBtn">
+                            <span class="btn_txt_wrap">
+                                <span class="icon"></span>
+                                <span class="btn_txt">Checkout Securely</span>
+                            </span>
+                        </button>
+-->
+                        <form action="/checkout/index.html" method="POST">
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh" data-amount="999" data-name="iptvbrands.com" data-description="Example charge" data-image="" data-locale="auto" data-zip-code="true">
+
+
+                            </script>
                         </form>
                     </div>
-                    <div class="delivery_cost"><span class="sum_lbl">Delivery</span><span class="sum_value">&pound;3.99</span></div>
-                    <div class="total_cost"><span class="sum_lbl">Total</span><span class="sum_value">&pound;880.99</span></div>
+                </div>
+            </section>
 
-                    <a href="/checkout/index.html" class="button add_to_basket">Checkout Securely</a></div>
-            </div>
+            <section id="checkoutSummary" class="checkout_summary_wrap">
+                <div class="mw500 checkout_summary">
+                    <h2>Basket Summary</h2>
+                    <div class="checkout_summary basket_prod_list_wrap">
+                        <div class="basket_prod_item_wrap">
+                            <div class="basket_prod_img" data-toggle="modal" data-target="#productModal">
+                                <img src="../base/images/image-port-small.png" alt="product title" /></div>
+                            <div class="basket_prod_details">
+                                <h6 data-toggle="modal" data-target="#productModal">This is a product title product title product title</h6>
+                                <div class="sku_wrap border_right">098765</div>
+                                <div class="var_wrap">
+                                    <span class="var_value var_value1 border_right">Colour</span>
+                                    <span class="var_value var_value2 border_right">Size</span>
+                                    <span class="var_value var_value3 border_right quanity">QTY: 1</span>
+                                </div>
+                            </div>
+                            <div class="basket_prod_price_wrap list_price_wrap">
+                                <span class="was_price">&pound;80.88</span>
+                                <span class="list_price">&pound;10.88</span>
+                            </div>
+                        </div>
+                        <div class="basket_prod_item_wrap">
+                            <div class="basket_prod_img" data-toggle="modal" data-target="#productModal">
+                                <img src="../base/images/image-port-small.png" alt="product title" /></div>
+                            <div class="basket_prod_details">
+                                <h6 data-toggle="modal" data-target="#productModal">This is a product title product title product title</h6>
+                                <div class="sku_wrap border_right">098765</div>
+                                <div class="var_wrap">
+                                    <span class="var_value var_value1 border_right">Colour</span>
+                                    <span class="var_value var_value2 border_right">Size</span>
+                                    <span class="var_value var_value3 border_right quanity">QTY: 1</span>
+                                </div>
+                            </div>
+                            <div class="basket_prod_price_wrap list_price_wrap">
+                                <span class="was_price">&pound;1000.88</span>
+                                <span class="list_price">&pound;1000.88</span>
+                            </div>
+                        </div>
+                        <div class="basket_prod_item_wrap">
+                            <div class="basket_prod_img" data-toggle="modal" data-target="#productModal">
+                                <img src="../base/images/image-port-small.png" alt="product title" /></div>
+                            <div class="basket_prod_details">
+                                <h6 data-toggle="modal" data-target="#productModal">This is a product title product title product title</h6>
+                                <div class="sku_wrap border_right">098765</div>
+                                <div class="var_wrap">
+                                    <span class="var_value var_value1 border_right">Colour</span>
+                                    <span class="var_value var_value2 border_right">Size</span>
+                                    <span class="var_value var_value3 border_right quanity">QTY: 1</span>
+                                </div>
+                            </div>
+                            <div class="basket_prod_price_wrap list_price_wrap">
+                                <span class="was_price">&pound;800.88</span>
+                                <span class="list_price">&pound;80.88</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </section>
 
         <!-- MOVE THIS INTO IT'S OWN FILE-->
@@ -289,6 +320,39 @@
                                     </div>
                                 </div>
 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- PRODUCT MODAL-->
+            <div class="modal fade mw600 address_modal" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <button type="button" class="close_modal" data-dismiss="modal" aria-label="Close">
+                              <span class="close_icon"></span>
+                            </button>
+
+                            <div class="add_address_wrap">
+                                <h3>Add Address</h3>
+                                <form>
+                                    <input type="text" name="email" placeholder="House number or name">
+                                    <input type="text" name="email" placeholder="Street">
+                                    <input type="text" name="email" placeholder="Town or City">
+                                    <input type="text" name="email" placeholder="Postcode">
+                                    <button type="submit" name="submit" class="add_item_button submit">
+                                        <span class="btn_txt_wrap">
+                                            <span class="icon"></span>
+                                            <span class="btn_txt">Add this address</span>
+                                        </span>
+                                    </button>
+                                </form>
                             </div>
 
                         </div>
