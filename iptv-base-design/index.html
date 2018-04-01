@@ -57,7 +57,7 @@
                                 <span class="icon"><span class="basket_number">2</span></span><span class="hide_mobile nav_text">Basket</span>
                             </a>
                         </li>
-                        <li class="nav_login"><a href="#"><span class="icon"></span><span class="hide_mobile nav_text">Login / Register</span></a></li>
+                        <li class="nav_login"><a href="#" data-toggle="modal" data-target="#loginModal"><span class="icon"></span><span class="hide_mobile nav_text">Login / Register</span></a></li>
                         <!-- LINKS TO THE HOMEPAGE-->
                         <li class="nav_home"><a href="#"><span class="icon"></span><span class="hide_mobile nav_text">Watch Live</span></a></li>
                         <!-- LINKS TO THE EVENT HOLDERS MAIN WEBSITE-->
@@ -86,13 +86,13 @@
 
 
                     <!-- ########## NO PRODUCT ON AIR ########## -->
-                    <div id="noProductOnAir" class="no_item_on_air">
+                    <div id="noProductOnAir" class="no_item_on_air" style="display: none;">
                         <div class="noitem_txt_wrap">The next product will be starting on air shortly...</div>
                     </div>
                     <!-- ########## NO PRODUCT ON AIR ########## -->
 
                     <!-- ########## ON AIR PRODUCT ########## -->
-                    <div class="hero_prod_wrap" style="display: none;">
+                    <div class="hero_prod_wrap">
 
                         <div class="prod_list_img_wrap" data-toggle="modal" data-target="#productModal">
                             <img src="base/images/image-port-small.png" alt="product title" />
@@ -148,6 +148,88 @@
                             <div class="btn_wrap">
                                 <button class="add_to_basket">Buy Now</button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- LOGIN / REGISTER MODAL-->
+            <div class="modal fade small_modal login_reg_modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="buyVariationsModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h4>Login / Register</h4>
+                            <button type="button" class="close_modal" data-dismiss="modal" aria-label="Close">
+                                <span class="close_icon"></span>
+                            </button>
+
+                            <section id="loginEmail" style="display: none;">
+                                <p>Please enter you email address.</p>
+                                <form>
+                                    <input type="email" name="email" placeholder="Email">
+                                    <button type="button" name="submit" class="checkoutbtn submit" id="LoginCheckoutBtn">
+                                    <span class="btn_txt_wrap">
+                                        <span class="btn_txt">Next</span>
+                                    </span>
+                                </button>
+                                </form>
+                            </section>
+
+                            <section id="loginPassword" style="display: none;">
+                                <p>Please enter you password.</p>
+                                <form>
+                                    <input type="password" name="password" placeholder="Password">
+                                    <button type="button" name="submit" class="checkoutbtn submit" id="LoginCheckoutBtn">
+                                    <span class="btn_txt_wrap">
+                                        <span class="icon"></span>
+                                        <span class="btn_txt">Sign in</span>
+                                    </span>
+                                </button>
+                                    <a href="#" class="forgot_pass">Forgotten your password</a>
+                                </form>
+                            </section>
+
+                            <section id="loginRegister">
+                                <div class="no_acc_msg">
+                                    <p>Sorry, there is not an account registered with this address. As this is our discount sales website, we do not share login details with our main website.</p>
+                                    <p><a href="#">Use a different email address</a></p>
+                                </div>
+                                <div class="no_acc_msg no_acc_msg_error">
+                                    <p>There are errors below, please correct them and try again</p>
+                                </div>
+                                <h4>Register</h4>
+                                <form>
+                                    <select class="custom-select custom-select-lg mb-3">
+                                        <option value="">Please select</option>
+                                        <option value="Ms">Ms</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Mr">Mr</option>
+                                        <option value="Rev">Rev</option>
+                                        <option value="Prof">Prof</option>
+                                        <option value="Dr">Dr</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <input type="text" name="fname" placeholder="First Name">
+                                    <input type="text" name="lname" placeholder="Surname">
+
+                                    <input class="form_error" type="tel" name="tel" pattern="[0-9]*" data-rule-required="true" data-rule-minlength="10" placeholder="Telephone">
+                                    <div id="tel-message-error" role="alert" class="form_error_alert">This is an example error message</div>
+
+                                    <input type="password" name="fname" placeholder="Password">
+                                    <input type="password" name="fname" placeholder="Confirm Password">
+
+
+                                    <button type="button" name="submit" class="checkoutbtn submit" id="LoginCheckoutBtn">
+                                    <span class="btn_txt_wrap">
+                                        <span class="icon"></span>
+                                        <span class="btn_txt">Register</span>
+                                    </span>
+                                </button>
+                                </form>
+                            </section>
+
 
                         </div>
                     </div>

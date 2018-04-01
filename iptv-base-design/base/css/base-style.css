@@ -471,12 +471,69 @@
     .variations_modal h4 {
         text-align: left;
     }
-
     .modal-content {
         -webkit-border-radius: 0px;
         -moz-border-radius: 0px;
         border-radius: 0px;
     }
+
+    /* LOGIN MODAL #region */
+    .login_reg_modal h4 {
+        text-align: left;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+    }
+
+    .login_reg_modal button.close_modal {
+        position: absolute;
+        top: 3px;
+        right: -2px;
+        width: 29px;
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    .login_reg_modal .modal-body p {
+        text-align: left;
+    }
+
+    .forgot_pass {
+        margin: 20px 0;
+    }
+    .no_acc_msg {
+        border: 1px solid #C9C900;
+        background-color: #FFFFF7;
+        padding: 10px 10px 0px 10px;
+        margin-bottom: 30px;
+    }
+    .login_reg_modal .modal-body .no_acc_msg p {
+        text-align: center;
+    }
+    .login_reg_modal h5 {
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .no_acc_msg_error {
+        color: #CC0000;
+        border: 1px solid #CC0000;
+        background-color: #FDF2F2;
+        padding: 10px 10px 0px 10px;
+        margin-bottom: 30px;
+    }
+    .form_error {
+        border: 1px solid #CC0000;
+        border-left: 4px solid #CC0000;
+    }
+    .form_error_alert {
+        text-align: left;
+        margin: -15px 0 20px 0;
+        color: #CC0000;
+    }
+    /* LOGIN MODAL #endregion */
     /* SMALL MODAL #endregion */
 }
 
@@ -1034,7 +1091,7 @@ button.slick-prev {
     margin-top: 50px;
 }
 
-.btn_wrap {
+.checkout_page .btn_wrap {
     float: left;
     width: 100%;
     margin-top: 40px;
