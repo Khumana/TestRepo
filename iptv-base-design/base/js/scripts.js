@@ -63,3 +63,22 @@ $("#CheckoutAddressBtn").click(function () {
 
 // /\ DELETE THIS = DEMO ONLY /\
 // CHECKBOX SHOW HIDE ADDRESS #endregion
+
+
+
+
+
+$(document).ready(function () {
+    $(".client_logo_wrap").css("top",
+        "-" + $(".client_logo_wrap").height() + "px");
+});
+
+$(window).resize(function () {
+    $(".client_logo_wrap").css("top",
+        "-" + $(".client_logo_wrap").height() + "px");
+});
+
+//
+//$(window).resize(function () {
+//    $(".client_logo_wrap").css("top", $(".client_logo_wrap").height() - 0.5 "px");
+//});

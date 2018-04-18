@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Pre Event Registration</title>
+    <meta name="description" content="Pre Event Registration">
+    <meta name="keywords" content="IPTV base page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!--BASE STYLES AND LAYOUT-->
+    <link rel="stylesheet" type="text/css" href="../base/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../base/css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../base/css/base-style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../sections/css/pre-event-version_1.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../sections/css/section_3_modal_version_1.css" media="all">
+
+    <!-- CLIENT OVERRIDE STYLES - NEEDS TO BE DYNAMIC CLIENT NAME-->
+    <link rel="stylesheet" type="text/css" href="../client-overrides/client_name.css" media="all">
+
+</head>
+
+<body>
+
+    <article class="pre_event">
+        <section class="hero_container">
+            <div class="client_logo_wrap">
+                <img src="../base/images/dummy-logo.svg" alt="Company Name" />
+            </div>
+            <section class="hero_content">
+                <h1>Register for our exclusive special sales event!</h1>
+                <h2>1st, 2nd &amp; 3rd January 2019</h2>
+                <h3>Timer</h3>
+                <p>Register today to avoid disapointment!</p>
+                <a class="button" data-toggle="modal" data-target="#registerModal">Register for event</a>
+            </section>
+        </section>
+    </article>
+
+    <!-- BUY VARIATIONS MODAL-->
+    <div class="modal fade small_modal register_modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <h4>Register for our exclusive special sales event!</h4>
+                    <button type="button" class="close_modal" data-dismiss="modal" aria-label="Close">
+                                <span class="close_icon"></span>
+                            </button>
+
+                    <div class="modal_select_wrap">
+                        <input type="text" placeholder="Title">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Surname">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm Password">
+                    </div>
+                    <div class="btn_wrap">
+                        <button class="button">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../base/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../base/js/cookie-law.js"></script>
+    <script type="text/javascript" src="../base/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../base/js/scripts.js"></script>
+
+</body>
+
+</html>

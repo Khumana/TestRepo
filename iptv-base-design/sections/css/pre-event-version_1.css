@@ -1,0 +1,78 @@
+.pre_event {
+    background-image: url(../../base/images/pre_event_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-areas: "... pre_event_hero ...";
+    grid-gap: 10px;
+}
+
+.pre_event .hero_container {
+    background-color: rgba(255, 255, 255, 0.98);
+    padding: 20px;
+    grid-area: pre_event_hero;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+    align-self: center;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.pre_event .client_logo_wrap {
+    background-color: #fff;
+    padding: 4% 2%;
+    width: 80%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    /*    margin-top: -10%;*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.pre_event h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1em;
+    margin: 1em 0 1.2em 0;
+}
+
+.pre_event h2 {
+    text-align: center;
+}
+
+.register_modal h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.3em;
+    line-height: 1em;
+    margin: 1em 0 0em 0;
+}
+
+.register_modal button.close_modal {
+    position: absolute;
+    top: -3px;
+    right: -2px;
+    width: 29px;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.pre_event a.button,
+.register_modal button {
+    background-color: #FF4A9C;
+    color: #fff;
+}
