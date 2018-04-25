@@ -51,6 +51,16 @@ function valueChanged() {
 // \/ DELETE THIS = DEMO ONLY \/
 // CHECKOUT CHANGE PARTIAL VIEW #region
 
+$("#LoginRegisterBtn").click(function () {
+    $("#loginEmail").hide();
+    $("#loginPassword").show();
+});
+
+$("#PasswordRegisterBtn").click(function () {
+    $("#loginPassword").hide();
+    $("#loginRegister").show();
+});
+
 $("#LoginCheckoutBtn").click(function () {
     $(".checkout_login").hide();
     $(".CheckoutAddress").show();
