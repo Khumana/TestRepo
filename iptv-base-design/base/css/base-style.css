@@ -1178,3 +1178,23 @@ button.slick-prev {
 
 
 /* CHECKOUT #endregion */
+
+/* LOGIN REGISTER #region */
+
+.account_register_page {
+    width: 100%;
+    float: left;
+}
+
+.account_register {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 0 3%;
+}
+
+.account_register h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* LOGIN REGISTER #endregion */
