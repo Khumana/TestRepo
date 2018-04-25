@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
     <!--BASE STYLES AND LAYOUT-->
+    <link rel="stylesheet" type="text/css" href="../base/countdown/jquery.classycountdown.min.css" />
     <link rel="stylesheet" type="text/css" href="../base/css/bootstrap.min.css" media="all">
     <link rel="stylesheet" type="text/css" href="../base/css/reset.css" media="all">
     <link rel="stylesheet" type="text/css" href="../base/css/base-style.css" media="all">
@@ -35,14 +36,19 @@
             <section class="hero_content">
                 <h1>Register for our exclusive special sales event!</h1>
                 <h2>1st, 2nd &amp; 3rd January 2019</h2>
-                <h3>Timer</h3>
+
+
+                <div class="countdown">
+                </div>
+
+
                 <p>Register today to avoid disapointment!</p>
                 <a class="button" data-toggle="modal" data-target="#registerModal">Register for event</a>
             </section>
         </section>
     </article>
 
-    <!-- BUY VARIATIONS MODAL-->
+    <!-- MODAL-->
     <div class="modal fade small_modal register_modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -69,10 +75,40 @@
         </div>
     </div>
 
+
+
+
+
+
     <script type="text/javascript" src="../base/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../base/js/cookie-law.js"></script>
     <script type="text/javascript" src="../base/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../base/js/scripts.js"></script>
+
+    <script type="text/javascript" src="../base/countdown/jquery.classycountdown.min.js"></script>
+    <script type="text/javascript" src="../base/countdown/jquery.knob.js"></script>
+    <script type="text/javascript" src="../base/countdown/jquery.throttle.js"></script>
+    <!--
+<script>
+    $('.countdown').ClassyCountdown({
+        theme: "flat-colors",
+        end: $.now() + 10000
+    });
+</script>
+-->
+
+    <script>
+        $('.countdown').ClassyCountdown({
+            theme: "flat-colors-very-wide",
+            now: $.now() / 1000,
+            end: '1546333200'
+        });
+        // You need to calculate the Epoch time to the date first. 
+        // https://www.epochconverter.com
+        // Timestamp in milliseconds: 1546333200000        
+        // Example Human time (GMT): Tuesday, January 1, 2019 9:00:00 AM
+
+    </script>
 
 </body>
 
