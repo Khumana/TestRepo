@@ -718,7 +718,8 @@ button.slick-prev {
 
 /* BASKET #region */
 
-.basket_page {
+.basket_page,
+.account_page {
     float: left;
     width: 94%;
     margin: 20px 3%;
@@ -1198,3 +1199,56 @@ button.slick-prev {
 }
 
 /* LOGIN REGISTER #endregion */
+
+/* ACCOUNT #region */
+
+.account_page h1 {
+    /*    margin-bottom: 1.6em;*/
+}
+
+.account_page h2 {
+    text-align: left;
+}
+
+.account_page ul {
+    margin: 0 0 0 10px;
+}
+
+.account_page li {
+    text-align: left;
+}
+
+.acc_section {
+    margin: 20px 0;
+}
+
+.acc_section_item {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .acc_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .acc_section_item {
+        padding: 16px 30px 26px 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .acc_section_item {
+        padding: 20px 30px 30px 30px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .acc_section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* ACCOUNT #endregion */
