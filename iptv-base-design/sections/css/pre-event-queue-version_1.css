@@ -1,0 +1,101 @@
+.pre_event_queue {
+    padding: 0 0 50px 0;
+    background-color: #0F0030;
+}
+
+.hero_container {
+    background-image: url(../../base/images/pre_event_background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 10px;
+    margin-bottom: 50px;
+}
+
+.client_logo_container {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.client_logo_wrap {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.hero_wrap {
+    background: #fff;
+    padding: 2px;
+}
+
+.holding_msg {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+h1 {
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 960px;
+    margin: 0 auto 30px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.7em;
+    }
+}
+
+h2 {
+    text-align: center;
+    line-height: 1.3em;
+}
+
+p {
+    text-align: center;
+}
+
+.modal-body p {
+    margin-top: 10px;
+}
+
+.lower_message_wrap {
+    padding: 0 10px;
+}
+
+.reg_reminder {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px 10px 20px 10px;
+}
+
+.small_modal .modal-content {
+    padding-bottom: 30px;
+}
+
+.small_modal h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.3em;
+    line-height: 1em;
+    margin: 1em 0 0em 0;
+}
+
+.small_modal button.close_modal {
+    position: absolute;
+    top: -3px;
+    right: -2px;
+    width: 29px;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.reg_reminder a.button,
+button {
+    max-width: 300px;
+    background-color: #FF4A9C;
+    color: #fff;
+}

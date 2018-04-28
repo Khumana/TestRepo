@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Pre Event Queue</title>
+    <meta name="description" content="Pre Event Registration">
+    <meta name="keywords" content="IPTV base page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!--BASE STYLES AND LAYOUT-->
+    <link rel="stylesheet" type="text/css" href="../base/countdown/jquery.classycountdown.min.css" />
+    <link rel="stylesheet" type="text/css" href="../base/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../base/css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../base/css/base-style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../sections/css/pre-event-queue-version_1.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../sections/css/section_3_modal_version_1.css" media="all">
+
+    <!-- CLIENT OVERRIDE STYLES - NEEDS TO BE DYNAMIC CLIENT NAME-->
+    <link rel="stylesheet" type="text/css" href="../client-overrides/client_name.css" media="all">
+
+</head>
+
+<body>
+
+    <article class="pre_event_queue">
+        <div class="client_logo_container">
+            <div class="client_logo_wrap">
+                <img src="../base/images/dummy-logo.svg" alt="Company Name" />
+            </div>
+        </div>
+        <section class="hero_container">
+            <section class="holding_msg mw960">
+                <h1>Due to the amazing popularity of todays event, there is a queue to enter the sale...</h1>
+                <p>Thank you for your patience.</p>
+            </section>
+
+            <div class="hero_wrap mw960">
+                <div class="live_stream_wrap videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/24YdtUdt_rY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <!--                        <img src="base/images/image-1920x1080.png" alt="holding video image" />-->
+                </div>
+            </div>
+        </section>
+
+        <section class="lower_message_wrap">
+            <section class="holding_msg mw960">
+                <h2>Enjoy the show!</h2>
+                <p>Please enjoy the live feed of the show, and you can be taking advantage of these incredible deals before you know it! Whilst you are waiting, why not register for this event if you have not already? This will help save you time and reduce the chance of missing out on your desired bargains!</p>
+            </section>
+            <section class="reg_reminder_wrap mw600">
+                <div class="reg_reminder">
+                    <h4>Heve you registered for the event yet?</h4>
+                    <a class="button" data-toggle="modal" data-target="#registerModal">Register for event</a></div>
+            </section>
+        </section>
+
+    </article>
+
+    <!-- MODAL-->
+    <div class="modal fade small_modal register_modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
+        <div id="register" class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <h4>Register for our exclusive special sales event!</h4>
+                    <button type="button" class="close_modal" data-dismiss="modal" aria-label="Close">
+                                <span class="close_icon"></span>
+                            </button>
+
+                    <div class="modal_select_wrap">
+                        <input type="text" placeholder="Title">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Surname">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm Password">
+                    </div>
+                    <div class="btn_wrap">
+                        <button class="button">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="enterEvent" class="modal-dialog modal-dialog-centered" role="document" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <h4>Enter Event!</h4>
+                    <p>There is now space for you in our exclusive special sales event!</p>
+                    <button type="button" class="close_modal" data-dismiss="modal" aria-label="Close">
+                                <span class="close_icon"></span>
+                            </button>
+
+                    <div class="btn_wrap">
+                        <button class="button">Enter Event!</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="../base/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../base/js/cookie-law.js"></script>
+    <script type="text/javascript" src="../base/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="../base/countdown/jquery.classycountdown.min.js"></script>
+    <script type="text/javascript" src="../base/countdown/jquery.knob.js"></script>
+    <script type="text/javascript" src="../base/countdown/jquery.throttle.js"></script>
+    <script type="text/javascript" src="../base/js/scripts.js"></script>
+
+
+    <script>
+        $('.countdown').ClassyCountdown({
+            theme: "flat-colors-very-wide",
+            now: $.now() / 1000,
+            end: '1546333200',
+
+        });
+
+
+        // You need to calculate the Epoch time to the date first. 
+        // https://www.epochconverter.com
+        // Timestamp in milliseconds: 1546333200000        
+        // Example Human time (GMT): Tuesday, January 1, 2019 9:00:00 AM
+
+    </script>
+
+</body>
+
+</html>
