@@ -1253,6 +1253,61 @@ button.slick-prev {
 
 /* ACCOUNT #endregion */
 
+/* ORDER HISTORY - LIST #region */
+
+.oh_list_item {
+    border: 1px solid #ccc;
+    border-bottom: none;
+    float: left;
+    width: 100%
+}
+
+.oh_list_item:nth-last-child(1) {
+    border-bottom: 1px solid #ccc;
+}
+
+.oh_list_item:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+a.oh_list_item:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.oh_list_title {
+    background-color: #242424;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.oh_list_item .oh_list_item_content {
+    float: left;
+    width: 33%;
+    border-left: 1px solid #ccc;
+    line-height: 3rem;
+}
+
+.oh_list_item .oh_list_item_content:nth-last-child(1) {
+    display: none;
+}
+
+.oh_list_item .oh_list_order_date {
+    border-left: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .oh_list_item .oh_list_item_content:nth-last-child(1) {
+        display: block;
+    }
+    .oh_list_item .oh_list_item_content {
+        width: 25%;
+    }
+}
+
+/* ORDER HISTORY - LIST #endregion */
+
 /* ORDER HISTORY - ITEM #region */
 
 .order_details {
