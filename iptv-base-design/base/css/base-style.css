@@ -1252,3 +1252,83 @@ button.slick-prev {
 }
 
 /* ACCOUNT #endregion */
+
+/* ORDER HISTORY - ITEM #region */
+
+.order_details {
+    float: left;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin-bottom: 3em;
+    text-align: left;
+}
+
+.order_details .order_details_item {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.order_details .order_details_item:nth-child(1) {
+    border: none;
+}
+
+.order_details span,
+.order_details strong {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.order_details strong {
+    float: right;
+    text-align: right;
+}
+
+
+
+@media only screen and (min-width: 450px) {
+
+    .order_details .order_details_item {
+        width: 50%;
+        border-top: none;
+        border-left: 1px solid #ccc;
+    }
+
+    .order_details .order_details_item:nth-last-child(1) {
+        float: right;
+        text-align: right;
+    }
+
+    .order_details span,
+    .order_details strong {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .order_details .order_details_item:nth-child(1) span,
+    .order_details .order_details_item:nth-child(1) strong {
+        float: left;
+        text-align: left;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .order_details .order_details_item {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .order_details .order_details_item:nth-child(2) {
+        width: 28%;
+        max-width: 400px;
+        padding-left: 0;
+    }
+}
+
+/* ORDER HISTORY - ITEM #endregion */

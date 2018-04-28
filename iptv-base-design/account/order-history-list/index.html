@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Order History</title>
+    <meta name="description" content="IPTV base page">
+    <meta name="keywords" content="IPTV base page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!--BASE STYLES AND LAYOUT-->
+    <link rel="stylesheet" type="text/css" href="../../base/slick/slick.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../base/slick/slick-theme.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../base/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../base/css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../base/css/base-style.css" media="all">
+
+    <!-- SECTION LAYOUT STYLES - EACH SECTION NEEDS DYNAMIC VERSION NUMBERS -->
+    <link rel="stylesheet" type="text/css" href="../sections/css/section_0_preheader_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="../../sections/css/section_0_header_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="../../sections/css/section_1_video_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="../../sections/css/section_2_products_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="../../sections/css/section_3_modal_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="../../sections/css/section_4_footer_version_1.css" />
+
+    <!-- CLIENT OVERRIDE STYLES - NEEDS TO BE DYNAMIC CLIENT NAME-->
+    <link rel="stylesheet" type="text/css" href="../../client-overrides/client_name.css" media="all">
+
+</head>
+
+<!-- MOVE THE ABOVE INTO A HEADER FILE -->
+
+<body>
+    <header>
+
+        <section id="message_section">
+            <!-- WHERE THE EVENT HOLDER CAN ADD A MESSAGE -->
+            <div>this is a promo message</div>
+        </section>
+
+
+        <!-- MOVE THIS INTO IT'S OWN FILE-->
+        <section id="section_header_version_1">
+            <div class="mw1500">
+                <!-- LINKS TO THE HOMEPAGE-->
+                <div class="logo_wrap"><a href="../index.html"><img src="../base/images/dummy-logo.svg" alt="Company Name" /></a></div>
+                <nav>
+                    <ul>
+                        <li class="nav_basket">
+                            <a href="#">
+                                <span class="icon"><span class="basket_number">0</span></span><span class="hide_mobile nav_text">Basket</span>
+                            </a>
+                        </li>
+                        <li class="nav_login"><a href="#"><span class="icon"></span><span class="hide_mobile nav_text">Login / Register</span></a></li>
+                        <!-- LINKS TO THE HOMEPAGE-->
+                        <li class="nav_home"><a href="../index.html"><span class="icon"></span><span class="hide_mobile nav_text">Watch Live</span></a></li>
+                        <!-- LINKS TO THE EVENT HOLDERS MAIN WEBSITE-->
+                        <li class="nav_main"><a href="#"><span class="icon"></span><span class="hide_mobile nav_text">Main Website</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+    </header>
+
+    <article>
+
+        <section id="basketPage" class="basket_page">
+            <div class="mw1500">
+                <div class="title_wrap">
+                    <h1>Basket Summary</h1>
+                </div>
+                <div class="basket_prod_list_wrap">
+                    <div class="basket_prod_item_wrap">
+                        <div class="basket_prod_img" data-toggle="modal" data-target="#productModal">
+                            <img src="../base/images/image-port-small.png" alt="product title" /></div>
+                        <div class="basket_prod_details">
+                            <h3 data-toggle="modal" data-target="#productModal">This is a product title product title product title</h3>
+                            <div class="sku_wrap border_right">098765</div>
+                            <div class="var_wrap">
+                                <span class="var_value var_value1 border_right">Colour</span>
+                                <span class="var_value var_value2 border_right">Size</span>
+                            </div>
+                        </div>
+                        <div class="quanity_wrap">
+                            <button class="qty_button minus disabled" disabled="disabled" type="button">-</button>
+                            <input class="bkt_quanity" type="number" id="itemQuanity" value="1" maxlength="3" pattern="[0-9]*" min="1" max="10">
+                            <button class="qty_button plus" type="button">+</button>
+                        </div>
+                        <div class="basket_prod_price_wrap list_price_wrap">
+                            <span class="was_price">&pound;800.88</span>
+                            <span class="list_price">&pound;800.88</span>
+                        </div>
+                        <div class="basket_remove"><a href="#" class="remove_bkt_item">X Remove</a></div>
+                    </div>
+                    <div class="basket_prod_item_wrap">
+                        <div class="basket_prod_img" data-toggle="modal" data-target="#productModal">
+                            <img src="../base/images/image-port-small.png" alt="product title" /></div>
+                        <div class="basket_prod_details">
+                            <h3 data-toggle="modal" data-target="#productModal">This is a product title product title product title</h3>
+                            <div class="sku_wrap border_right">098765</div>
+                            <div class="var_wrap">
+                                <span class="var_value var_value1 border_right">Colour</span>
+                                <span class="var_value var_value2 border_right">Size</span>
+                            </div>
+                        </div>
+                        <div class="quanity_wrap">
+                            <button class="qty_button minus disabled" disabled="disabled" type="button">-</button>
+                            <input class="bkt_quanity" type="number" id="itemQuanity" value="1" maxlength="3" pattern="[0-9]*" min="1" max="10">
+                            <button class="qty_button plus" type="button">+</button>
+                        </div>
+                        <div class="basket_prod_price_wrap list_price_wrap">
+                            <span class="was_price">&pound;800.88</span>
+                            <span class="list_price">&pound;800.88</span>
+                        </div>
+                        <div class="basket_remove"><a href="#" class="remove_bkt_item">X Remove</a></div>
+                    </div>
+                    <div class="basket_prod_item_wrap">
+                        <div class="basket_prod_img" data-toggle="modal" data-target="#productModal">
+                            <img src="../base/images/image-port-small.png" alt="product title" /></div>
+                        <div class="basket_prod_details">
+                            <h3 data-toggle="modal" data-target="#productModal">This is a product title product title product title</h3>
+                            <div class="sku_wrap border_right">098765</div>
+                            <div class="var_wrap">
+                                <span class="var_value var_value1 border_right">Colour</span>
+                                <span class="var_value var_value2 border_right">Size</span>
+                            </div>
+                        </div>
+                        <div class="quanity_wrap">
+                            <button class="qty_button minus disabled" disabled="disabled" type="button">-</button>
+                            <input class="bkt_quanity" type="number" id="itemQuanity" value="1" maxlength="3" pattern="[0-9]*" min="1" max="10">
+                            <button class="qty_button plus" type="button">+</button>
+                        </div>
+                        <div class="basket_prod_price_wrap list_price_wrap">
+                            <span class="was_price">&pound;800.88</span>
+                            <span class="list_price">&pound;800.88</span>
+                        </div>
+                        <div class="basket_remove"><a href="#" class="remove_bkt_item">X Remove</a></div>
+                    </div>
+                </div>
+                <div class="basket_delivery_wrap">
+                    <h2>Delivery Summary</h2>
+                    <div class="delivery_options_wrap">
+                        <form>
+                            <fieldset>
+                                <div class="del_opt">
+                                    <label class="radio">
+                                    <input type="radio" name="del_opt" value="standard" checked="checked">
+                                        <span>Standard Delivery (3-5 working days)</span>
+                                    </label>
+                                </div>
+                                <div class="del_opt_cost">&pound;3.99</div>
+                                <div class="del_opt"><label class="radio">
+                                    <input type="radio" name="del_opt" value="click">
+                                        <span>Click &amp; Collect (3-5 working days)</span>
+                                    </label>
+                                </div>
+                                <div class="del_opt_cost">&pound;5.99</div>
+                                <div class="del_opt"><label class="radio">
+                                    <input type="radio" name="del_opt" value="express">
+                                        <span>Express Delivery (1 working day, order by 1pm)</span>
+                                    </label>
+                                </div>
+                                <div class="del_opt_cost">&pound;8.99</div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="delivery_cost"><span class="sum_lbl">Delivery</span><span class="sum_value">&pound;3.99</span></div>
+                    <div class="total_cost"><span class="sum_lbl">Total</span><span class="sum_value">&pound;880.99</span></div>
+
+                    <a href="/checkout/index.html" class="button add_to_basket">Checkout Securely</a></div>
+            </div>
+        </section>
+
+        <!-- MOVE THIS INTO IT'S OWN FILE-->
+        <section id="section_3_modal_version_1">
+
+            <!-- PRODUCT MODAL-->
+            <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <button type="button" class="close_modal" data-dismiss="modal" aria-label="Close">
+                              <span class="close_icon"></span><span>Close</span>
+                            </button>
+
+                            <div class="modal_img_wrap">
+                                <!-- <img src="base/images/image-port-normal.png" alt="product title" />-->
+                                <div class="slick-slider">
+                                    <div><img src="base/images/image-port-normal.png" alt="product title" /></div>
+                                    <div><img src="base/images/image-port-normal.png" alt="product title" /></div>
+                                    <div><img src="base/images/image-port-normal.png" alt="product title" /></div>
+                                </div>
+                            </div>
+
+
+                            <div class="modal_summary_wrap">
+                                <div class="time_onair_wrap">
+                                    <span class="time_onair_msg">Estimated time:</span>
+                                    <span class="time_onair">09:30</span>
+                                </div>
+
+                                <h4>This is a product title product title product title</h4>
+
+
+                                <div class="sku_wrap"><span class="sku_title">SKU:</span>098765</div>
+                                <div class="list_price_wrap"><span class="was_price">&pound;800.88</span><span class="list_price">&pound;800.88</span></div>
+
+
+                                <div class="stars_container">
+                                    <div class="stars_wrap">
+                                        <div class="stars_rating" style="width: 80%;">&nbsp;</div>
+                                    </div>
+                                </div>
+
+                                <div class="modal_prod_intro">
+                                    <!-- MAX CHARACTER COUNT 300-->
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget sapien erat. Ut nec lorem laoreet, eleifend sapien gravida, posuere sem. Nulla feugiat sodales vestibulum. Etiam elementum enim felis, non eleifend nisi dictum vitae. Curabitur consequat ligula mi, vel ornare quam aliquet nec.</p>
+                                </div>
+
+                                <div class="modal_select_wrap">
+                                    <select class="custom-select custom-select-lg mb-3">
+                                        <option selected>Sizes</option>
+                                        <option value="1">Small</option>
+                                        <option value="2">Medium</option>
+                                        <option value="3">Large</option>
+                                    </select>
+                                    <select class="custom-select custom-select-lg mb-3">
+                                        <option selected>Colours</option>
+                                        <option value="1">Red</option>
+                                        <option value="2">Green</option>
+                                        <option value="3">Blue</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+                            <div class="modal_more_details_wrap">
+
+                                <div class="accordion_item">
+                                    <button class="collapsed" data-toggle="collapse" data-target="#Description" aria-expanded="false" aria-controls="Description">Description</button>
+
+                                    <div id="Description" class="collapse accordion_item_content" aria-labelledby="Description" data-parent="#accordion">
+                                        <p>
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion_item">
+                                    <button class="collapsed" data-toggle="collapse" data-target="#Specifications" aria-expanded="false" aria-controls="Specifications">Specifications</button>
+
+                                    <div id="Specifications" class="collapse accordion_item_content" aria-labelledby="Specifications" data-parent="#accordion">
+                                        <p>
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        </p>
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Quisque vitae leo non quam dignissim pretium in eget augue.</li>
+                                            <li>In condimentum quam sit amet massa sollicitudin consectetur.</li>
+                                            <li>Curabitur sit amet lectus porta, luctus magna et, luctus nibh.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion_item">
+                                    <button class="collapsed" data-toggle="collapse" data-target="#DeliveryReturns" aria-expanded="false" aria-controls="DeliveryReturns">Delivery &amp; Returns</button>
+
+                                    <div id="DeliveryReturns" class="collapse accordion_item_content" aria-labelledby="DeliveryReturns" data-parent="#accordion">
+                                        <p>
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        </p>
+                                        <p>
+                                            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        </p>
+                                        <ol>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Quisque vitae leo non quam dignissim pretium in eget augue.</li>
+                                            <li>In condimentum quam sit amet massa sollicitudin consectetur.</li>
+                                            <li>Curabitur sit amet lectus porta, luctus magna et, luctus nibh.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <!-- MOVE THIS INTO IT'S OWN FILE-->
+            <section id="section_4_footer_version_1">
+                <div class="footer_wrap">
+                    <div class="footer_menu_wrap">
+                        <ul>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="/cookie-policy/">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_logo_container">
+                        <div class="footer_logo_wrap">
+                            <div class="footer_copyright">
+                                <span class="poweredby">Powered by</span>
+                                <span class="copyright_msg">&copy;2018 IPTV Brands</span>
+                            </div>
+                            <div class="footer_logo">
+                                <img src="../base/images/iptv-brands-logo-final-OL-grey.svg" alt="IPTV Bands logo" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+    </article>
+
+    <section id="client_extras_js_fonts">
+        <!--This needs to be a content box in GRACE that any links for extra js or fonts can be added-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+    </section>
+
+
+    <script type="text/javascript" src="../../base/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../base/js/cookie-law.js"></script>
+    <script type="text/javascript" src="../../base/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../base/js/scripts.js"></script>
+    <script type="text/javascript" src="../../base/slick/slick.min.js"></script>
+
+</body>
+
+</html>
