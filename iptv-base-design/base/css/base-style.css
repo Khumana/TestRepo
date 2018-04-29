@@ -719,7 +719,8 @@ button.slick-prev {
 /* BASKET #region */
 
 .basket_page,
-.account_page {
+.account_page,
+.address_page {
     float: left;
     width: 94%;
     margin: 20px 3%;
@@ -1230,7 +1231,9 @@ button.slick-prev {
 
 .breadcrumb_wrap {
     float: left;
-    background-color: #e9ecef;
+    /*    background-color: #e9ecef;*/
+    background-color: #f6f4f6;
+    border-bottom: 1px solid #ccc;
 }
 
 .breadcrumb_container {
@@ -1451,3 +1454,85 @@ a.oh_list_item:hover {
 }
 
 /* BASIC DETAILS #endregion */
+
+/* ADDRESS BOOK #region */
+
+.address_page h1 {
+    text-align: left;
+    font-size: 2em;
+    font-weight: 300;
+    padding-bottom: 0.75em;
+    border-bottom: 1px solid #D3D3D3;
+    margin-bottom: 1em;
+}
+
+.address_page p {
+    text-align: left;
+}
+
+.address_book {
+    display: grid;
+}
+
+.address_book .co_bc_address {
+    margin: 0;
+    width: auto;
+}
+
+.address_item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.add_address_item_wrap {
+    display: grid;
+    background-color: #f6f4f6;
+}
+
+.add_address_item_wrap .co_bc_address_add {
+    background-color: #fff;
+}
+
+.add_address_item {
+    align-self: center;
+}
+
+.address_item ul,
+.address_item li {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+}
+
+.remove_address {
+    background-image: url(../images/icons/icons_cross-dark-grey.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .address_book {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-gap: 20px;
+    }
+    .address_item {
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    .address_book {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* ADDRESS BOOK #endregion */

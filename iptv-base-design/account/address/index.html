@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Address Book</title>
+    <meta name="description" content="IPTV base page">
+    <meta name="keywords" content="IPTV base page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!--BASE STYLES AND LAYOUT-->
+    <link rel="stylesheet" type="text/css" href="../../base/slick/slick.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../base/slick/slick-theme.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../base/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../base/css/reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../../base/css/base-style.css" media="all">
+
+    <!-- SECTION LAYOUT STYLES - EACH SECTION NEEDS DYNAMIC VERSION NUMBERS -->
+    <link rel="stylesheet" type="text/css" href="../../sections/css/section_0_preheader_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="../../sections/css/section_0_header_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="../../sections/css/section_1_video_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="../../sections/css/section_2_products_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="../../sections/css/section_3_modal_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="../../sections/css/section_4_footer_version_1.css" />
+
+    <!-- CLIENT OVERRIDE STYLES - NEEDS TO BE DYNAMIC CLIENT NAME-->
+    <link rel="stylesheet" type="text/css" href="../../client-overrides/client_name.css" media="all">
+
+</head>
+
+<!-- MOVE THE ABOVE INTO A HEADER FILE -->
+
+<body>
+    <header>
+
+        <section id="message_section">
+            <!-- WHERE THE EVENT HOLDER CAN ADD A MESSAGE -->
+            <div>this is a promo message</div>
+        </section>
+
+
+        <!-- MOVE THIS INTO IT'S OWN FILE-->
+        <section id="section_header_version_1">
+            <div class="mw1500">
+                <!-- LINKS TO THE HOMEPAGE-->
+                <div class="logo_wrap"><a href="../index.html"><img src="../../base/images/dummy-logo.svg" alt="Company Name" /></a></div>
+                <nav>
+                    <ul>
+                        <li class="nav_basket">
+                            <a href="#">
+                                <span class="icon"><span class="basket_number">0</span></span><span class="hide_mobile nav_text">Basket</span>
+                            </a>
+                        </li>
+                        <li class="nav_login"><a href="#"><span class="icon"></span><span class="hide_mobile nav_text">Login / Register</span></a></li>
+                        <!-- LINKS TO THE HOMEPAGE-->
+                        <li class="nav_home"><a href="../index.html"><span class="icon"></span><span class="hide_mobile nav_text">Watch Live</span></a></li>
+                        <!-- LINKS TO THE EVENT HOLDERS MAIN WEBSITE-->
+                        <li class="nav_main"><a href="#"><span class="icon"></span><span class="hide_mobile nav_text">Main Website</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+    </header>
+
+    <article>
+
+        <section class="breadcrumb_wrap">
+            <div class="breadcrumb_container">
+                <div class="mw1500">
+                    <a href="../index.html" class="breadcrumb">
+                    <span class="icon"></span>
+                    <span class="bc_txt">Back to Account</span>
+                </a>
+                    <a href="#" class="signout">
+                    <span class="icon"></span>
+                    <span class="bc_txt">Sign Out</span>
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="basketPage" class="address_page">
+            <div class="mw1500">
+                <div class="title_wrap">
+                    <h1>Address Book</h1>
+                    <p>Add an address so you can save time during checkout.</p>
+                </div>
+
+                <section class="address_book">
+
+                    <div class="address_item add_address_item_wrap" data-toggle="modal" data-target="#addressModal">
+                        <div class="add_address_item">
+                            <div class="co_bc_address">Add a new address</div>
+                            <div class="co_bc_address_add">+</div>
+                        </div>
+                    </div>
+
+                    <div class="address_item">
+                        <div class="remove_address"></div>
+                        <ul>
+                            <li>Wembley National Stadium Ltd</li>
+                            <li>Wembley</li>
+                            <li>MIDDX</li>
+                            <li>HA9 0WS</li>
+                            <li>United Kingdom</li>
+                        </ul>
+                    </div>
+
+                    <div class="address_item">
+                        <div class="remove_address"></div>
+                        <ul>
+                            <li>Wembley National Stadium Ltd</li>
+                            <li>Wembley</li>
+                            <li>MIDDX</li>
+                            <li>HA9 0WS</li>
+                            <li>United Kingdom</li>
+                        </ul>
+                    </div>
+
+                    <div class="address_item">
+                        <div class="remove_address"></div>
+                        <ul>
+                            <li>Wembley National Stadium Ltd</li>
+                            <li>Wembley</li>
+                            <li>MIDDX</li>
+                            <li>HA9 0WS</li>
+                            <li>United Kingdom</li>
+                        </ul>
+                    </div>
+
+                    <div class="address_item">
+                        <div class="remove_address"></div>
+                        <ul>
+                            <li>Wembley National Stadium Ltd</li>
+                            <li>Wembley</li>
+                            <li>MIDDX</li>
+                            <li>HA9 0WS</li>
+                            <li>United Kingdom</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+        <div class="modal fade mw600 address_modal" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+
+                        <button type="button" class="close_modal" data-dismiss="modal" aria-label="Close">
+                              <span class="close_icon"></span>
+                            </button>
+
+                        <div class="add_address_wrap">
+                            <h3>Add Address</h3>
+                            <form>
+                                <input type="text" name="email" placeholder="House number or name">
+                                <input type="text" name="email" placeholder="Street">
+                                <input type="text" name="email" placeholder="Town or City">
+                                <input type="text" name="email" placeholder="Postcode">
+                                <button type="submit" name="submit" class="add_item_button submit">
+                                        <span class="btn_txt_wrap">
+                                            <span class="icon"></span>
+                                            <span class="btn_txt">Add this address</span>
+                                        </span>
+                                    </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+
+            <!-- MOVE THIS INTO IT'S OWN FILE-->
+            <section id="section_4_footer_version_1">
+                <div class="footer_wrap">
+                    <div class="footer_menu_wrap">
+                        <ul>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="/cookie-policy/">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_logo_container">
+                        <div class="footer_logo_wrap">
+                            <div class="footer_copyright">
+                                <span class="poweredby">Powered by</span>
+                                <span class="copyright_msg">&copy;2018 IPTV Brands</span>
+                            </div>
+                            <div class="footer_logo">
+                                <img src="../../base/images/iptv-brands-logo-final-OL-grey.svg" alt="IPTV Bands logo" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+    </article>
+
+    <section id="client_extras_js_fonts">
+        <!--This needs to be a content box in GRACE that any links for extra js or fonts can be added-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+    </section>
+
+
+    <script type="text/javascript" src="../../base/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../base/js/cookie-law.js"></script>
+    <script type="text/javascript" src="../../base/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../base/js/scripts.js"></script>
+    <script type="text/javascript" src="../../base/slick/slick.min.js"></script>
+
+</body>
+
+</html>
