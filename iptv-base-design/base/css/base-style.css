@@ -1443,3 +1443,11 @@ a.oh_list_item:hover {
 }
 
 /* ORDER HISTORY - ITEM #endregion */
+
+/* BASIC DETAILS #region */
+
+.basic_details h2 {
+    margin-top: 3rem;
+}
+
+/* BASIC DETAILS #endregion */
