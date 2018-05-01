@@ -1,0 +1,761 @@
+<!doctype html>
+<html style="background-color: #f4f4f4;">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EmailTemplate-Responsive</title>
+
+    <!-- CSS Reset -->
+    <style type="text/css">
+html,  body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,  td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+</style>
+
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+        
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+
+            .email-container {
+                width: 100% !important;
+            }
+
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+        
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+			.col_1_2 {
+				width: 100%!important;
+			}
+                
+        }
+
+    </style>
+		
+	<style type="text/css">
+	
+		/*global*/
+		img[class=rwd_img]{
+			width:100%!important;
+			height: auto;
+			float: left;
+		}	
+		
+		table[class=fullWidth]{
+			width:100%!important;
+		}	
+		
+		td[class=header_logo_col] {
+			width: 25%!important;
+		}
+				
+		td[class=header_logo] {
+			width: 50%!important;
+		}
+		
+		/*mobile*/
+		 @media screen and (max-width: 600px) {
+
+			table[class=col_1_2] {
+				width:100%!important;
+			}
+		
+			td[class=header_logo_col] {
+				width: 0%!important;
+			}
+			 
+			td[class=header_logo] {
+				width: 100%!important;
+			}	 
+			 
+			td[class=product_details_price] {
+				width: 40px!important;
+				font-size: 10px;
+				line-height: 16px;
+			}	
+			 
+			table[class=total] {
+				width: 100%!important;
+			}	 
+		}
+		
+	</style>	
+		
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f4f4f4;" border="1" cellpadding="0" cellspacing="0" width="100%">
+    <table style="width: 100%;">
+        <tbody>
+			<tr>
+				<td height="10px">&nbsp;</td>
+			</tr>
+            <tr>
+                <td>
+
+<!--[if (gte mso 9)|(IE)]>
+      <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+    <![endif]-->
+					
+<table style="max-width: 600px;" border="0" cellpadding="0" cellspacing="0" width="100%" class="fullWidth">
+	<tbody>
+		<tr>
+			<td class="side_col" width="10px">&nbsp;</td>
+
+			<td class="main_wrap" width="100%" 
+				style="max-width: 580px; 
+					   padding: 30px 1.9em 1.9em 1.9em; 
+					   font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; 
+					   border: 1px solid #dddddd;" 
+				bgcolor="#ffffff" cellpadding="20">
+
+				<!--Header-->
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="fullWidth">
+					<tbody>
+						<tr>
+							<td class="header_logo_col" width="25%">&nbsp;</td>
+							<td class="header_logo">
+								<img width="100%" src="https://gallery.mailchimp.com/77b75c4a425e888af89d145c9/images/1d362f9a-5c4a-4e51-a81b-b12fbad72993.jpg" class="rwd_img" alt="dummy-logo.jpg">
+							</td>
+							<td class="header_logo_col" width="25%">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="spacer_row" height="10px" width="10px">&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!--intro-->
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="fullWidth">
+					<tbody>
+						<tr>
+							<td class="main_wrap" width="100%" 
+									style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';" 
+									bgcolor="#ffffff" cellpadding="0">
+								<h1>Thank you for shopping with us!</h1>
+							</td>
+						</tr>
+						<tr>
+							<td class="main_wrap" width="100%" 
+									style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+										   font-size: 14px;
+										   line-height: 24px;" 
+									bgcolor="#ffffff" cellpadding="0">
+								<p>Hi #name#,</p>
+								<p>Thank you for shopping with us! You order has been receieved and will be on it's way to you soon.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+			</td>
+
+			<td class="side_col" width="10px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="spacer_row" height="10px" width="10px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="side_col" width="10px">&nbsp;</td>
+
+			<td class="main_wrap" width="100%" 
+				style="max-width: 580px; 
+					   font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; 
+					   border: 1px solid #dddddd;" 
+				bgcolor="#ffffff" cellpadding="20">
+
+				<!--Header-->
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="fullWidth">
+					<tbody>
+						<tr>
+							<td class="main_wrap" width="100%" 
+									style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+										   padding: 10px 1.9em 0em 1.9em; " 
+									bgcolor="#ffffff" cellpadding="0">
+								<h2>Delivery</h2>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" class="fullWidth">
+									<tbody>
+										<tr>
+											<td style="padding: 0px 1.9em 10px 1.9em; ">
+
+												<table width="250px" border="0" cellspacing="0" cellpadding="0" 
+													   align="left" class="col_1_2">
+													<tbody>
+														<tr>
+															<td width="100%" 
+																style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+																	   font-size: 14px;
+																	   line-height: 24px;
+																	   font-weight: bold; 
+																	   text-transform: uppercase;
+																	   border-bottom: 1px solid #cccccc;
+																	   padding-bottom: 5px"
+																bgcolor="#ffffff" 
+																cellpadding="0">
+
+																	Delivery Address
+															</td>
+														</tr>
+
+														<tr>
+															<td width="100%" 
+																	style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+																		   font-size: 14px;
+																		   line-height: 24px;
+																		   padding-top: 10px;
+																		   padding-bottom: 20px;" 
+																	bgcolor="#ffffff" cellpadding="0">
+																Wembley Stadium,<br/>
+																Wembley,<br/>
+																London,<br/>
+																United Kingdom,<br/>
+																HA9 0WS. 
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<table width="250px" border="0" cellspacing="0" cellpadding="0" 
+													   align="right" class="col_1_2">
+													<tbody>
+														<tr>
+															<td class="main_wrap" width="100%" 
+																style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+																	   font-size: 14px;
+																	   line-height: 24px;
+																	   font-weight: bold; 
+																	   text-transform: uppercase;
+																	   border-bottom: 1px solid #cccccc;
+																	   padding-bottom: 5px"
+																bgcolor="#ffffff" 
+																cellpadding="0">
+
+																	Billing Address
+															</td>
+														</tr>
+
+														<tr>
+															<td class="main_wrap" width="100%" 
+																	style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+																		   font-size: 14px;
+																		   line-height: 24px;
+																		   padding-top: 10px;
+																		   padding-bottom: 20px;" 
+																	bgcolor="#ffffff" cellpadding="0">
+																Wembley Stadium,<br/>
+																Wembley,<br/>
+																London,<br/>
+																United Kingdom,<br/>
+																HA9 0WS. 
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+
+											</td>
+										</tr>	
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</td>
+			<td class="side_col" width="10px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="spacer_row" height="10px" width="10px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="side_col" style="width: 10px;" width="10px">&nbsp;</td>
+
+			<td class="main_wrap" width="100%" 
+				style="max-width: 580px; 
+					   font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; 
+					   border: 1px solid #dddddd;" 
+				bgcolor="#ffffff" cellpadding="20">
+
+				<!--Header-->
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="fullWidth">
+					<tbody>
+						<tr>
+							<td class="main_wrap" width="100%" 
+									style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+										   padding: 10px 1.9em 0em 1.9em; " 
+									bgcolor="#ffffff" cellpadding="0">
+								<h2>Order Summary</h2>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!--product summary-->
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="fullWidth">
+					<tbody>
+						<tr>
+							<td style="padding: 0px 1.9em 10px 1.9em; ">
+
+								<table width="50%" border="0" cellspacing="0" cellpadding="0" align="left" class="col_1_2">
+									<tbody>
+										<tr>
+											<td class="main_wrap" width="100%" 
+													style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+														   font-size: 14px;
+														   line-height: 24px;" 
+													bgcolor="#ffffff" cellpadding="0">
+												Order Number: <strong>123456</strong>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<table width="50%" border="0" cellspacing="0" cellpadding="0" align="left" class="col_1_2">
+									<tbody>
+										<tr>
+											<td class="main_wrap" width="100%" 
+													style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+														   font-size: 14px;
+														   line-height: 24px;" 
+													bgcolor="#ffffff" cellpadding="0">
+												Order Date: <strong>01/01/2019</strong>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</td>
+						</tr>	
+
+						<tr>
+							<td>
+
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="fullWidth">
+									<tbody>
+										<tr>
+											<td style="padding-top: 10px;
+													   padding-left: 10px;
+													   padding-right: 10px;">
+
+												<table width="100%" border="0" bordercolor="#dddddd" cellspacing="0" cellpadding="0" align="left" class="fullWidth">
+													<tbody>
+														<!--DUMMY PRODUCTS FOR DEMO-->
+														<!--PRODUCT - LOOP THIS FOR PRODUCTS-->
+														<tr style="border-top: 1px solid #cccccc;">
+															<td class="product_details_img" width="50px" 
+																	style="padding-top: 10px;
+																		   padding-bottom: 10px;
+																		   margin: 0;" 
+																	cellpadding="0" 
+																	valign="top">
+																<img width="100%" src="https://gallery.mailchimp.com/77b75c4a425e888af89d145c9/images/d15bb10e-096d-49b9-8d2f-3bf3612274f7.png" class="rwd_img" alt="product image"/>
+
+															</td>
+
+															<td class="product_details" width="" 
+																	style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+																		   font-size: 11px;
+																		   line-height: 18px;
+																		   padding-top: 10px;
+																		   padding-right: 10px;
+																		   padding-bottom: 10px;
+																		   padding-left: 10px;"
+																	bgcolor="#ffffff">
+																<span>This is a product title product title product title<br />
+																	<span style="font-size: 10px;">ItemCode | Variation | Size | Qty</span>
+																</span>
+
+															</td>
+
+															<td class="product_details_price" width="50px" 
+																	style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+																		   text-align: center;
+																		   font-size: 12px;
+																		   line-height: 20px;
+																		   padding-top: 10px;
+																		   padding-right: 10px;
+																		   padding-bottom: 10px;
+																		   padding-left: 10px;
+																		   max-width: 60px;" 
+																	cellpadding="0">
+																<span class="was_price" 
+																	  style="text-decoration: line-through; 
+																			 font-size: 10px;">
+																			&pound;888.00</span>
+																<span class="price">&pound;800.99</span>
+															</td>
+														</tr>
+														<!--:end: PRODUCT - LOOP THIS FOR PRODUCTS-->
+
+														<!--DELETE BELOW - DEMO PRODUCT-->
+														<tr style="border-top: 1px solid #cccccc;">
+															<td class="product_details_img" width="50px" 
+																	style="padding-top: 10px;
+																		   padding-bottom: 10px;
+																		   margin: 0;" 
+																	cellpadding="0" 
+																	valign="top">
+																<img width="100%" src="https://gallery.mailchimp.com/77b75c4a425e888af89d145c9/images/d15bb10e-096d-49b9-8d2f-3bf3612274f7.png" class="rwd_img" alt="product image"/>
+
+															</td>
+
+															<td class="product_details" width="" 
+																	style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+																		   font-size: 11px;
+																		   line-height: 18px;
+																		   padding-top: 10px;
+																		   padding-right: 10px;
+																		   padding-bottom: 10px;
+																		   padding-left: 10px;"
+																	bgcolor="#ffffff">
+																<span>This is a product title product title product title<br />
+																	<span style="font-size: 10px;">ItemCode | Variation | Size | Qty</span>
+																</span>
+
+															</td>
+
+															<td class="product_details_price" width="50px" 
+																	style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+																		   text-align: center;
+																		   font-size: 12px;
+																		   line-height: 20px;
+																		   padding-top: 10px;
+																		   padding-right: 10px;
+																		   padding-bottom: 10px;
+																		   padding-left: 10px;
+																		   max-width: 60px;" 
+																	cellpadding="0">
+																<span class="was_price" 
+																	  style="text-decoration: line-through; 
+																			 font-size: 10px;">
+																			&pound;888.00</span>
+																<span class="price">&pound;800.99</span>
+															</td>
+														</tr>
+
+														<!--DELETE BELOW - DEMO PRODUCT-->
+														<tr style="border-top: 1px solid #cccccc;">
+															<td class="product_details_img" width="50px" 
+																	style="padding-top: 10px;
+																		   padding-bottom: 10px;
+																		   margin: 0;" 
+																	cellpadding="0" 
+																	valign="top">
+																<img width="100%" src="https://gallery.mailchimp.com/77b75c4a425e888af89d145c9/images/d15bb10e-096d-49b9-8d2f-3bf3612274f7.png" class="rwd_img" alt="product image"/>
+
+															</td>
+
+															<td class="product_details" width="" 
+																	style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+																		   font-size: 11px;
+																		   line-height: 18px;
+																		   padding-top: 10px;
+																		   padding-right: 10px;
+																		   padding-bottom: 10px;
+																		   padding-left: 10px;"
+																	bgcolor="#ffffff">
+																<span>This is a product title product title product title<br />
+																	<span style="font-size: 10px;">ItemCode | Variation | Size | Qty</span>
+																</span>
+
+															</td>
+
+															<td class="product_details_price" width="50px" 
+																	style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+																		   text-align: center;
+																		   font-size: 12px;
+																		   line-height: 20px;
+																		   padding-top: 10px;
+																		   padding-right: 10px;
+																		   padding-bottom: 10px;
+																		   padding-left: 10px;
+																		   max-width: 60px;" 
+																	cellpadding="0">
+																<span class="was_price" 
+																	  style="text-decoration: line-through; 
+																			 font-size: 10px;">
+																			&pound;888.00</span>
+																<span class="price">&pound;800.99</span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+			</td>
+
+
+			<td class="side_col" width="10px">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td class="side_col" style="width: 10px;" width="10px">&nbsp;</td>
+			<td>
+		<table class="total" width="50%" align="right" border="0" cellpadding="10" bgcolor="#cccccc">
+									<tbody>
+										<tr>
+											<td style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+														   text-align: right;
+														   font-size: 14px;
+														   line-height: 14px;
+														   max-width: 60px;
+														   border-bottom: 1px solid #ffffff;" 
+													cellpadding="0" 
+													valign="middle">
+												Delivery:
+											</td>
+											<td 
+													style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+														   text-align: right;
+														   font-size: 14px;
+														   line-height: 14px;
+														   max-width: 60px;
+														   border-bottom: 1px solid #ffffff;" 
+													cellpadding="0" 
+													valign="bottom">
+												&pound;1.99
+											</td>
+										</tr>
+										<tr>
+											<td 
+													style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+														   text-align: right;
+														   font-size: 14px;
+														   line-height: 14px;
+														   max-width: 60px;" 
+													cellpadding="0" 
+													valign="middle">
+												Total:
+											</td>
+											<td 
+													style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+														   text-align: right;
+														   font-size: 14px;
+														   line-height: 14px;
+														   max-width: 60px;" 
+													cellpadding="0" 
+													valign="middle">
+												&pound;1,000.99
+											</td>
+										</tr>
+									</tbody>
+								</table>
+			</td>
+			<td class="side_col" width="10px">&nbsp;</td>
+		</tr>
+
+	</tbody>
+</table>
+
+					
+					
+<!--footer-->
+<table style="max-width: 600px;" height="20px" border="0" cellpadding="0" cellspacing="0" width="100%" class="fullWidth">
+	<tbody>
+		<tr>
+			<td class="side_col">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>					
+
+<table style="max-width: 600px;" border="0" cellpadding="10" cellspacing="0" width="100%" class="fullWidth">
+	<tbody>
+		<tr>
+			<td width="100%" 
+				style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+					   font-size: 10px;
+					   line-height: 18px;
+					   text-align: center;">
+				<p><strong>Cancelations and Returns</strong></p>
+				<p>Except for goods which cannot be returned, if you wish to cancel your order you may do so within 30 days.</p>
+				<p>Some goods that by their nature cannot be returned for health and hygiene reasons may only be returned if there is a manufacturing fault. These items include: Underwear and swimwear where packaging is unsealed or hygiene strips removed. Earrings where the packaging is unsealed</p></td>
+		</tr>
+	</tbody>
+</table>
+					
+<table style="max-width: 600px;" height="20px" border="0" cellpadding="0" cellspacing="0" width="100%" class="fullWidth">
+	<tbody>
+		<tr>
+			<td class="side_col">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+					
+<table style="max-width: 600px;" border="0" cellpadding="0" cellspacing="0" width="100%" class="fullWidth">
+	<tbody>
+		<tr>
+			<td class="side_col" width="10px">&nbsp;</td>
+
+			<td class="main_wrap" width="100%" 
+				style="max-width: 580px; 
+					   padding: 1em 1.9em 1em 1.9em; 
+					   font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif'; 
+					   border: 1px solid #dddddd;" 
+				bgcolor="#333333" cellpadding="20">
+
+				<!--about-->
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="fullWidth">
+					<tbody>
+						<tr>
+							<td width="100%" 
+								style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+									   font-size: 10px;
+									   line-height: 18px;
+									   text-align: center;
+									   color: #888888;">
+								<p>Goods are processed by IPTV Brands on behalf of the provider. IPTV Brands are TV sales specialist who provide a platform for amazing brands to demonstrate their products.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<!--brand-->
+				<table width="175px" border="0" cellspacing="0" cellpadding="0" class="footer_logo">
+					<tbody>
+						<tr>
+							<td style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+									   font-size: 10px;
+									   line-height: 24px;
+									   color: #888888;
+									   padding: 10px;
+									   text-transform: uppercase;">
+								Powered by</td>
+							<td>
+								<img class="rwd_img" width="100%" src="https://gallery.mailchimp.com/77b75c4a425e888af89d145c9/images/a9468ad1-5783-4cd7-b8b7-7daf0023197f.png" alt="logo"/>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+			</td>
+
+			<td class="side_col" width="10px">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<!--[if (gte mso 9)|(IE)]>
+          </td>
+        </tr>
+    </table>
+    <![endif]-->
+
+                </td>
+            </tr>
+			
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			
+        </tbody>
+    </table>
+</body>
+
+</html>
