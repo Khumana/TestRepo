@@ -187,6 +187,20 @@
     h3 {
         font-size: 1em;
         text-transform: inherit;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        /* number of lines to show */
+        -webkit-line-clamp: 2;
+        /* fallback */
+        line-height: 1.2em;
+        /* fallback */
+        max-height: 2.4em;
+        height: 2.4em;
+        width: 100%;
+        float: left;
+        text-transform: uppercase;
     }
 
     h4 {
