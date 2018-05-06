@@ -1,11 +1,11 @@
-#section_header_version_1,
+#section_header_version_2,
 .logo_wrap,
 nav,
 nav li {
     height: 50px;
 }
 
-#section_header_version_1 {
+#section_header_version_2 {
     border-bottom: 1px solid #ccc;
     width: 100%;
     float: left;
@@ -71,11 +71,33 @@ nav li.nav_basket a .icon {
     background-image: url(../../base/images/icons/icons_basket-line-black.svg);
 }
 
+nav.nav_left {
+    float: left;
+    flex: 1;
+}
+
+nav.nav_left ul {
+    float: left;
+}
+
+nav.nav_right {
+    float: right;
+    flex: 1;
+}
+
+nav.logo_wrap {
+    flex: 1;
+    float: none;
+}
+
+.header_wrap {
+    display: flex;
+}
 
 
 @media only screen and (min-width: 425px) {
 
-    #section_header_version_1,
+    #section_header_version_2,
     .logo_wrap,
     nav,
     nav li {
@@ -104,7 +126,7 @@ nav li.nav_basket a .icon {
 
 @media only screen and (min-width: 768px) {
 
-    #section_header_version_1,
+    #section_header_version_2,
     .logo_wrap,
     nav,
     nav li {
