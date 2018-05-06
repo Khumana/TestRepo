@@ -93,11 +93,11 @@
             </section>
 
             <section id="checkoutLogin" class="checkout_section">
-                <div class="mw500 checkout_login">
+                <div class="mw500">
                     <h3>Please login</h3>
+                    <p>Please enter your email address...</p>
                     <form>
                         <input type="email" name="email" placeholder="Email">
-                        <input type="password" name="password" placeholder="Password">
                         <button type="button" name="submit" class="checkoutbtn submit" id="LoginCheckoutBtn">
                             <span class="btn_txt_wrap">
                                 <span class="icon"></span>
@@ -107,6 +107,67 @@
                     </form>
                 </div>
             </section>
+
+            <section id="checkoutLoginPassword" class="checkout_section" style="display: none;">
+                <div class="mw500">
+                    <h3>Please login</h3>
+                    <p>Enter Password...</p>
+                    <form>
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="button" name="submit" class="checkoutbtn submit" id="LoginCheckoutPasswordBtn">
+                            <span class="btn_txt_wrap">
+                                <span class="icon"></span>
+                                <span class="btn_txt">Continue Securely</span>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+
+            <section id="loginRegister" class="checkout_section" style="display: none;">
+                <div class="mw500 login_register">
+                    <div class="no_acc_msg">
+                        <p>Sorry, there is not an account registered with this address. As this is our discount sales website, we do not share login details with our main website.</p>
+                        <p><a href="#">Use a different email address</a></p>
+                    </div>
+                    <div class="no_acc_msg no_acc_msg_error">
+                        <p>There are errors below, please correct them and try again</p>
+                    </div>
+                    <h4>Register</h4>
+                    <form>
+                        <select class="custom-select custom-select-lg mb-3">
+                                        <option value="">Please select</option>
+                                        <option value="Ms">Ms</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Mr">Mr</option>
+                                        <option value="Rev">Rev</option>
+                                        <option value="Prof">Prof</option>
+                                        <option value="Dr">Dr</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                        <input type="text" name="fname" placeholder="First Name">
+                        <input type="text" name="lname" placeholder="Surname">
+
+                        <input class="form_error" type="tel" name="tel" pattern="[0-9]*" data-rule-required="true" data-rule-minlength="10" placeholder="Telephone">
+                        <div id="tel-message-error" role="alert" class="form_error_alert">This is an example error message</div>
+
+                        <input type="password" name="fname" placeholder="Password">
+                        <input type="password" name="fname" placeholder="Confirm Password">
+
+
+                        <button type="button" name="submit" class="checkoutbtn submit" id="RegisterCheckoutBtn">
+                        <span class="btn_txt_wrap">
+                        <span class="icon"></span>
+                        <span class="btn_txt">Register &amp; Continue</span>
+                        </span>
+                    </button>
+                    </form>
+                </div>
+            </section>
+
+
 
             <section id="checkoutAddress" class="checkout_section CheckoutAddress" style="display: none;">
                 <div class="mw500 checkout_address">

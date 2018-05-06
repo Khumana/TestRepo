@@ -61,8 +61,20 @@ $("#PasswordRegisterBtn").click(function () {
     $("#loginRegister").show();
 });
 
+
+
 $("#LoginCheckoutBtn").click(function () {
-    $(".checkout_login").hide();
+    $("#checkoutLogin").hide();
+    $("#checkoutLoginPassword").show();
+});
+
+$("#LoginCheckoutPasswordBtn").click(function () {
+    $("#checkoutLoginPassword").hide();
+    $("#loginRegister").show();
+});
+
+$("#RegisterCheckoutBtn").click(function () {
+    $("#loginRegister").hide();
     $(".CheckoutAddress").show();
 });
 
