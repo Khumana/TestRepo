@@ -67,13 +67,6 @@
         text-transform: uppercase;
     }
 
-    .stars_container,
-    .stars_wrap,
-    .stars_rating {
-        width: 90px;
-        background-size: 90px 17px;
-        height: 17px;
-    }
 
 }
 

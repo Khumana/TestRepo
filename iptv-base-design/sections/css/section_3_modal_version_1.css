@@ -53,11 +53,29 @@ button.close_modal {
     font-size: 1em;
     background-color: #0098C6;
     border: none;
+    float: left;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .modal_summary_wrap .time_onair {
     background-color: #0098C6;
     border-color: #fff;
+}
+
+.modal_summary_wrap .time_onair_wrap .time_onair_msg,
+.modal_summary_wrap .time_onair_wrap .time_onair {
+    float: left;
+    text-align: left;
+    padding: 0 5px;
+}
+
+.modal_summary_wrap .time_onair_wrap .time_onair {
+    float: right;
+    text-align: right;
+    border-left: 1px solid #ffffff;
+    letter-spacing: 1px;
 }
 
 .modal_summary_wrap .list_price_wrap {
@@ -121,6 +139,7 @@ button.close_modal {
     float: left;
     width: 100%;
 }
+
 
 
 @media only screen and (min-width: 768px) {

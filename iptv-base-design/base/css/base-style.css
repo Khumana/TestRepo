@@ -1541,3 +1541,15 @@ a.oh_list_item:hover {
 }
 
 /* ADDRESS BOOK #endregion */
+
+/*STAR RATINGS  #region*/
+
+.stars_container,
+.stars_wrap,
+.stars_rating {
+    width: 90px;
+    background-size: 90px 17px;
+    height: 17px;
+}
+
+/*STAR RATINGS  #endregion*/
