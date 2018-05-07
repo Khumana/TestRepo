@@ -100,17 +100,6 @@
         background-color: darkblue;
     }
 
-    #section_2_products_version_3 .read_more {
-        position: absolute;
-        bottom: 0;
-        right: 6px;
-        font-size: 10px;
-        text-transform: uppercase;
-        font-style: italic;
-        /*        font-weight: bold;*/
-        color: #707070;
-    }
-
 }
 
 

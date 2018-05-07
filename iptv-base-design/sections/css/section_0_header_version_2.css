@@ -1,98 +1,101 @@
-#section_header_version_2,
-.logo_wrap,
-nav,
-nav li {
-    height: 50px;
+@media only screen and (min-width: 0px) {
+    #section_header_version_2,
+    .logo_wrap,
+    nav,
+    nav li {
+        height: 50px;
+    }
+
+    #section_header_version_2 {
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        float: left;
+    }
+
+    .logo_wrap {
+        width: 160px;
+        float: left;
+    }
+
+    .logo_wrap a {
+        display: block;
+        padding: 15px 0 9px 10px;
+    }
+
+    nav {
+        float: right;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
+
+    nav li {
+        margin-left: 5px;
+        float: right;
+    }
+
+    nav li:nth-last-child(1) {
+        margin-left: 0;
+    }
+
+    nav li a {
+        color: #000;
+    }
+
+    nav li a .icon {
+        display: block;
+        padding: 10px 0;
+        height: 50px;
+        width: 30px;
+        background-repeat: no-repeat;
+        background-image: url(../../base/images/icons/icons_account-line-black.svg);
+        background-position: center;
+        position: relative;
+    }
+
+    nav li.nav_main a .icon {
+        background-image: url(../../base/images/icons/icons_exit-line-black.svg);
+    }
+
+    nav li.nav_home a .icon {
+        background-image: url(../../base/images/icons/icons_watch-line-black.svg);
+    }
+
+    nav li.nav_login a .icon {
+        background-image: url(../../base/images/icons/icons_account-line-black.svg);
+    }
+
+    nav li.nav_basket a .icon {
+        background-image: url(../../base/images/icons/icons_basket-line-black.svg);
+    }
+
+    nav.nav_left {
+        float: left;
+        flex: 1;
+    }
+
+    nav.nav_left ul {
+        float: left;
+    }
+
+    nav.nav_right {
+        float: right;
+        flex: 1;
+    }
+
+    nav.logo_wrap {
+        flex: 1;
+        float: none;
+    }
+
+    .header_wrap {
+        display: flex;
+    }
 }
 
-#section_header_version_2 {
-    border-bottom: 1px solid #ccc;
-    width: 100%;
-    float: left;
-}
-
-.logo_wrap {
-    width: 160px;
-    float: left;
-}
-
-.logo_wrap a {
-    display: block;
-    padding: 15px 0 9px 10px;
-}
-
-nav {
-    float: right;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    float: right;
-}
-
-nav li {
-    margin-left: 5px;
-    float: right;
-}
-
-nav li:nth-last-child(1) {
-    margin-left: 0;
-}
-
-nav li a {
-    color: #000;
-}
-
-nav li a .icon {
-    display: block;
-    padding: 10px 0;
-    height: 50px;
-    width: 30px;
-    background-repeat: no-repeat;
-    background-image: url(../../base/images/icons/icons_account-line-black.svg);
-    background-position: center;
-    position: relative;
-}
-
-nav li.nav_main a .icon {
-    background-image: url(../../base/images/icons/icons_exit-line-black.svg);
-}
-
-nav li.nav_home a .icon {
-    background-image: url(../../base/images/icons/icons_watch-line-black.svg);
-}
-
-nav li.nav_login a .icon {
-    background-image: url(../../base/images/icons/icons_account-line-black.svg);
-}
-
-nav li.nav_basket a .icon {
-    background-image: url(../../base/images/icons/icons_basket-line-black.svg);
-}
-
-nav.nav_left {
-    float: left;
-    flex: 1;
-}
-
-nav.nav_left ul {
-    float: left;
-}
-
-nav.nav_right {
-    float: right;
-    flex: 1;
-}
-
-nav.logo_wrap {
-    flex: 1;
-    float: none;
-}
-
-.header_wrap {
-    display: flex;
-}
 
 
 @media only screen and (min-width: 425px) {
@@ -177,6 +180,12 @@ nav.logo_wrap {
     nav li a {
         padding: 0;
         margin-right: 20px;
+        float: right;
+    }
+
+    nav.nav_left li a {
+        padding: 0;
+        margin-left: 20px;
         float: right;
     }
 

@@ -143,11 +143,12 @@
         grid-template-columns: 33fr 10fr;
         grid-template-areas: "video product";
     }
+    /*FIREFOX FIX FOR VIDEO*/
     @-moz-document url-prefix() {
         .videoWrapper {
             position: relative;
             padding-bottom: 0;
-            padding-top: 100%;
+            padding-top: 40vw;
             height: 0;
         }
     }
@@ -206,5 +207,12 @@
 @media only screen and (min-width:1500px) {
     .video_section_container {
         grid-template-columns: 29.5fr 10fr;
+    }
+
+    /*FIREFOX FIX FOR VIDEO*/
+    @-moz-document url-prefix() {
+        .videoWrapper {
+            padding-top: 617px;
+        }
     }
 }
