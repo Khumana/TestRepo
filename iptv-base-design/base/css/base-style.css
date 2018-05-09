@@ -745,6 +745,43 @@ button.slick-prev {
 
 /* SLICK CAROUSEL #endregion */
 
+/* OWL #region */
+
+.modal_img_wrap {
+    position: relative;
+}
+
+.owl-carousel button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    text-indent: -9999px;
+    height: 100%;
+    margin: 0;
+    width: 50px;
+    display: block;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+}
+
+.owl-carousel button.disabled {
+    opacity: 0.5;
+}
+
+button.owl-prev {
+    z-index: 1;
+    background-image: url(../images/icons/icons_arrow-left-line-light-grey.svg)!important;
+    left: 0;
+}
+
+button.owl-next {
+    z-index: 1;
+    background-image: url(../images/icons/icons_arrow-right-line-light-grey.svg)!important;
+    right: 0;
+}
+
+/* OWL #endregion */
+
 /* BASKET #region */
 
 .basket_page,

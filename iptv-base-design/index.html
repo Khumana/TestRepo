@@ -14,8 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
     <!--BASE STYLES AND LAYOUT-->
-    <link rel="stylesheet" type="text/css" href="base/slick/slick.css" media="all">
-    <link rel="stylesheet" type="text/css" href="base/slick/slick-theme.css" media="all">
+    <link rel="stylesheet" type="text/css" href="base/owl/owl.carousel.min.css" media="all">
     <link rel="stylesheet" type="text/css" href="base/css/bootstrap.min.css" media="all">
     <link rel="stylesheet" type="text/css" href="base/css/reset.css" media="all">
     <link rel="stylesheet" type="text/css" href="base/css/base-style.css" media="all">
@@ -23,8 +22,8 @@
     <!-- SECTION LAYOUT STYLES - EACH SECTION NEEDS DYNAMIC VERSION NUMBERS -->
     <link rel="stylesheet" type="text/css" href="sections/css/section_0_preheader_version_1.css" />
     <link rel="stylesheet" type="text/css" href="sections/css/section_0_header_version_2.css" />
-    <link rel="stylesheet" type="text/css" href="sections/css/section_1_video_version_3.css" />
-    <link rel="stylesheet" type="text/css" href="sections/css/section_2_products_version_3.css" />
+    <link rel="stylesheet" type="text/css" href="sections/css/section_1_video_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="sections/css/section_2_products_version_1.css" />
     <link rel="stylesheet" type="text/css" href="sections/css/section_3_modal_version_1.css" />
     <link rel="stylesheet" type="text/css" href="sections/css/section_4_footer_version_1.css" />
 
@@ -101,7 +100,7 @@
 
 
         <!-- MOVE THIS INTO IT'S OWN FILE-->
-        <section id="section_1_video_version_1" style="display: none;">
+        <section id="section_1_video_version_1">
 
             <div class="mw1500">
                 <div class="video_section_container">
@@ -440,7 +439,7 @@
 
 
         <!-- MOVE THIS INTO IT'S OWN FILE-->
-        <section id="section_1_video_version_3">
+        <section id="section_1_video_version_3" style="display: none;">
 
             <div class="video_section_container">
 
@@ -622,7 +621,7 @@
 
 
         <!-- MOVE THIS INTO IT'S OWN FILE-->
-        <section id="section_2_products_version_1" style="display: none;">
+        <section id="section_2_products_version_1">
 
             <h2>Upcoming Products</h2>
 
@@ -1044,7 +1043,7 @@
         </section>
 
         <!-- MOVE THIS INTO IT'S OWN FILE-->
-        <section id="section_2_products_version_3">
+        <section id="section_2_products_version_3" style="display: none;">
             <div class="mw1500">
                 <h2>Upcoming Products</h2>
 
@@ -1310,10 +1309,19 @@
                             </button>
 
                             <div class="modal_img_wrap">
-                                <div class="slick-slider">
-                                    <div><img src="base/images/image-port-normal.png" alt="product title" /></div>
-                                    <div><img src="base/images/image-port-normal.png" alt="product title" /></div>
-                                    <div><img src="base/images/image-port-normal.png" alt="product title" /></div>
+                                <div class="owl-carousel">
+                                    <img src="base/images/image-port-small.png" alt="product title" />
+
+                                    <img src="base/images/image-port-normal.png" alt="product title" />
+
+                                    <img src="base/images/image-port-large.png" alt="product title" />
+
+                                    <img src="base/images/image-port-small.png" alt="product title" />
+
+                                    <img src="base/images/image-port-normal.png" alt="product title" />
+
+                                    <img src="base/images/image-port-large.png" alt="product title" />
+
                                 </div>
                             </div>
 
@@ -1447,6 +1455,7 @@
 
     </article>
 
+
     <section id="client_extras_js_fonts">
         <!--This needs to be a content box in GRACE that any links for extra js or fonts can be added-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
@@ -1456,8 +1465,9 @@
     <script type="text/javascript" src="base/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="base/js/cookie-law.js"></script>
     <script type="text/javascript" src="base/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="base/owl/owl.carousel.min.js"></script>
     <script type="text/javascript" src="base/js/scripts.js"></script>
-    <script type="text/javascript" src="base/slick/slick.min.js"></script>
+
 
 </body>
 

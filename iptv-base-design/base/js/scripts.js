@@ -87,6 +87,24 @@ $("#CheckoutAddressBtn").click(function () {
 // CHECKBOX SHOW HIDE ADDRESS #endregion
 
 
+//OWL #region 
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+});
+$('.owl-carousel').owlCarousel({
+    loop: false,
+    margin: 0,
+    dots: true,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        }
+    }
+})
+
+// OWL #endregion 
 
 
 
