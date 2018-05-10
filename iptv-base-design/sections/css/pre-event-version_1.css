@@ -23,6 +23,7 @@
     align-self: center;
     max-width: 600px;
     margin: 30px auto;
+    position: relative;
 }
 
 .pre_event .client_logo_wrap {
@@ -34,11 +35,15 @@
     margin-right: auto;
     left: 0;
     right: 0;
+    top: -30px;
     position: absolute;
     /*    margin-top: -10%;*/
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .pre_event h1 {
