@@ -1,0 +1,257 @@
+/*This theme style set is based on the following section types being selected*/
+
+/*
+    <link rel="stylesheet" type="text/css" href="sections/css/section_0_preheader_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="sections/css/section_0_header_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="sections/css/section_1_video_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="sections/css/section_2_products_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="sections/css/section_3_modal_version_1.css" />
+    <link rel="stylesheet" type="text/css" href="sections/css/section_4_footer_version_1.css" />
+*/
+
+/* FONT  #region */
+
+@font-face {
+    font-family: "BogleWeb";
+    src: url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Bold.eot");
+    src: url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Bold.eot?#iefix") format("embedded-opentype"),
+    url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Bold.woff2") format("woff2"),
+    url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Bold.woff") format("woff"),
+    url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BogleWeb";
+    src: url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Bold.eot");
+    src: url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Bold.eot?#iefix") format("embedded-opentype"),
+    url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Bold.woff2") format("woff2"),
+    url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Bold.woff") format("woff"),
+    url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BogleWeb";
+    src: url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Regular.eot");
+    src: url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Regular.eot?#iefix") format("embedded-opentype"),
+    url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Regular.woff2") format("woff2"),
+    url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Regular.woff") format("woff"),
+    url("https://i5.walmartimages.com/dfw/63fd9f59-46a2/7eb2b65d-8181-4d26-b75e-7fef6fdc8b02/v1/BogleWeb-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* FONT #endregion */
+
+/* BASE #region */
+
+button,
+html,
+body,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*    color: #444;*/
+    font-family: BogleWeb, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    text-transform: none;
+}
+
+#section_1_video_version_1 {
+    padding: 0px 0 20px 0;
+}
+
+@media only screen and (min-width: 1000px) {
+    #section_1_video_version_1 {
+        padding: 40px 0 20px 0;
+    }
+}
+
+.prod_list_details_wrap {
+    text-align: left;
+}
+
+.stars_container {
+    float: left;
+}
+
+.stars_rating {
+    background-image: url(../../base/images/icons/icons_stars-black.svg);
+}
+
+.stars_wrap {
+    background-image: url(../../base/images/icons/icons_stars-light-grey.svg);
+}
+
+a.button,
+button,
+input[type="submit"] {
+    background-color: #0065ff;
+}
+
+a.button:hover,
+button:hover,
+input[type="submit"]:hover,
+.add_to_basket:hover {
+    background-color: #7fb2ff;
+}
+
+span.list_price {
+    font-weight: 700;
+}
+
+.time_onair_wrap,
+.modal_summary_wrap .time_onair_wrap {
+    background-color: #072445;
+}
+
+.time_onair_wrap .time_onair {
+    background-color: #3ec5e6;
+    /*    background-color: #ffdd5a;*/
+}
+
+.basket_delivery_wrap a {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-transform: none;
+}
+
+/* BASE #endregion */
+
+/* HEADER #region */
+
+section#message_section {
+    background-color: #3ec5e6;
+    /*    background-color: #ffdd5a;*/
+    /*    color: #000;*/
+}
+
+header {
+    background-color: rgba(4, 30, 66, .98);
+    float: left;
+    width: 100%;
+}
+
+
+#section_header_version_1 {
+    padding-right: 10px;
+}
+
+#section_header_version_1,
+.logo_wrap,
+.logo_wrap a,
+nav,
+nav li,
+nav li a,
+nav a .nav_text,
+nav li a .icon {
+    height: 50px;
+    line-height: 50px;
+    color: #e2f3f7;
+}
+
+nav li a {
+    padding: 0;
+}
+
+.logo_wrap {
+    width: 50px;
+}
+
+.logo_wrap a {
+    padding: 10px;
+    width: 50px;
+    float: left;
+}
+
+nav a .nav_text,
+nav li a .icon {
+    float: right;
+    text-transform: none;
+}
+
+nav li a .icon {
+    background-size: 34px;
+}
+
+nav li.nav_main a .icon {
+    background-image: url(../../base/images/icons/icons_exit-line-white.svg);
+}
+
+nav li.nav_home a .icon {
+    background-image: url(../../base/images/icons/icons_watch-line-white.svg);
+}
+
+nav li.nav_login a .icon {
+    background-image: url(../../base/images/icons/icons_account-line-white.svg);
+}
+
+nav li.nav_basket a .icon {
+    background-image: url(../../base/images/icons/icons_basket-line-white.svg);
+}
+
+
+
+.basket_number {
+    background-color: #fced70;
+    color: #000;
+    top: 5px;
+    right: -6px;
+}
+
+
+/* HEADER  #endregion */
+
+/* VIDEO #region */
+
+.hero_prod_wrap {
+    grid-template-areas: "image details" "image button";
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-width: 500px) {
+    .hero_prod_wrap {
+        grid-template-columns: 10fr 16fr;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero_prod_wrap {
+        grid-template-columns: 10fr 23fr;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .hero_prod_wrap {
+        grid-template-columns: 100%;
+        grid-template-areas: "image" "details" "button";
+    }
+    .video_section_container {
+        grid-template-columns: 10fr 30fr;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .video_section_container {
+        grid-gap: 2%;
+        grid-template-columns: 10fr 28fr;
+    }
+}
+
+/* VIDEO #endregion */
+
+/* DUMMY #region */
+
+/* #endregion */
